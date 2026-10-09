@@ -55,7 +55,7 @@
       </div>
     </div>
   </section>
-  <section style="padding:64px clamp(20px,5vw,64px);background:#f6f7f9;border-top:1px solid #e3e6ec">
+  <section id="como-funciona" style="padding:64px clamp(20px,5vw,64px);background:#f6f7f9;border-top:1px solid #e3e6ec">
     <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:40px;max-width:640px">
       <h2 style="margin:0;font:600 clamp(26px,3.5vw,34px)/1.15 'Source Serif 4',serif;color:#111c36">Sua primeira emissão em 4 passos</h2>
       <p style="margin:0;font:400 16px/1.6 'IBM Plex Sans';color:#5b6475;text-wrap:pretty">Você faz tudo sozinho, na hora, sem pedir orçamento. Os certificados saem assim que o pagamento é confirmado.</p>
@@ -143,7 +143,7 @@
       </div>
     </div>
   </section>
-  <section data-screen-label="Preços" style="display:flex;flex-wrap:wrap;gap:40px 56px;padding:72px clamp(20px,5vw,64px);background:#1b2a4e;color:#fff">
+  <section id="precos" data-screen-label="Preços" style="display:flex;flex-wrap:wrap;gap:40px 56px;padding:72px clamp(20px,5vw,64px);background:#1b2a4e;color:#fff">
     <div style="flex:1 1 300px;display:flex;flex-direction:column;gap:20px;max-width:440px">
       <h2 style="margin:0;font:600 clamp(28px,4vw,38px)/1.15 'Source Serif 4',serif;text-wrap:balance">Quanto mais certificados, menor o preço de cada um.</h2>
       <p style="margin:0;font:400 16px/1.6 'IBM Plex Sans';color:#c9d1e3">Sem mensalidade. Você paga por certificado emitido, com cartão ou Pix.</p>
@@ -156,7 +156,7 @@
         </sc-for>
       </div>
     </div>
-    <div style="flex:1 1 320px;max-width:520px;background:#fff;color:#141a26;border-radius:10px;padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:22px">
+    <div style="flex:1 1 320px;min-width:0;max-width:520px;background:#fff;color:#141a26;border-radius:10px;padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:22px">
       <div style="font:500 12px 'IBM Plex Mono';letter-spacing:0.08em;text-transform:uppercase;color:#4a5876">Simule seu evento</div>
       <div style="display:flex;flex-direction:column;gap:10px">
         <div style="font:500 14px 'IBM Plex Sans';color:#3a4356">Quantos certificados você precisa?</div>
@@ -200,7 +200,7 @@
       </div>
     </div>
   </section>
-  <section data-screen-label="Perguntas" style="padding:72px clamp(20px,5vw,64px);background:#f6f7f9;display:flex;flex-wrap:wrap;gap:32px 64px">
+  <section id="perguntas" data-screen-label="Perguntas" style="padding:72px clamp(20px,5vw,64px);background:#f6f7f9;display:flex;flex-wrap:wrap;gap:32px 64px">
     <h2 style="flex:1 1 240px;max-width:340px;margin:0;font:600 clamp(26px,3.5vw,34px)/1.15 'Source Serif 4',serif;color:#111c36">Perguntas frequentes</h2>
     <div style="flex:2 1 360px;display:flex;flex-direction:column;border-top:1px solid #d5dae3">
       <sc-for list="{{ faq }}" as="f" hint-placeholder-count="5">
@@ -237,8 +237,8 @@
       <p style="font:400 16px/1.65 'IBM Plex Sans';color:#5b6475;text-wrap:pretty;margin:0">O código identifica o documento e a organização que o emitiu. Quem receber o certificado, como uma empresa ou universidade, confirma a autenticidade em segundos pela câmera do celular ou digitando o código.</p>
       <div style="display:flex;flex-direction:column;gap:10px;margin-top:4px"><div style="display:flex;gap:10px;font:400 15px/1.5 'IBM Plex Sans';color:#3a4356"><span style="width:6px;height:6px;border-radius:50%;background:#1b2a4e;flex:none;margin-top:8px"></span><span>Consulta pública e gratuita, sem cadastro</span></div><div style="display:flex;gap:10px;font:400 15px/1.5 'IBM Plex Sans';color:#3a4356"><span style="width:6px;height:6px;border-radius:50%;background:#1b2a4e;flex:none;margin-top:8px"></span><span>Mostra participante, evento, carga horária e emissor</span></div><div style="display:flex;gap:10px;font:400 15px/1.5 'IBM Plex Sans';color:#3a4356"><span style="width:6px;height:6px;border-radius:50%;background:#1b2a4e;flex:none;margin-top:8px"></span><span>Funciona no PDF e no certificado impresso</span></div></div>
     </div>
-    <div style="flex:1 1 320px;max-width:520px;display:flex;justify-content:center"><div style="width:100%;max-width:460px;display:flex;flex-direction:column;gap:14px">
-        <div style="background:#fffdf8;border:2px solid #1b2a4e;padding:28px 28px 22px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;box-shadow:0 16px 40px rgba(17,28,54,.12)">
+    <div style="flex:1 1 320px;min-width:0;max-width:520px;display:flex;justify-content:center"><div style="width:100%;max-width:460px;display:flex;flex-direction:column;gap:14px">
+        <div style="background:#fffdf8;border:2px solid #1b2a4e;padding:clamp(16px,5vw,28px) clamp(16px,5vw,28px) 22px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 20px;box-shadow:0 16px 40px rgba(17,28,54,.12)">
           <div style="display:flex;flex-direction:column;gap:6px"><div style="width:150px;height:1px;background:#1b2a4e"></div><div style="font:600 13px 'IBM Plex Sans';color:#2a3244">Dra. Helena Duarte</div><div style="font:400 12px 'IBM Plex Sans';color:#5b6475">Diretora executiva</div></div>
           <div style="display:flex;align-items:center;gap:12px;padding:8px;border:2px solid #d1a23a;border-radius:6px;background:#fff">
             <div style="display:flex;flex-direction:column;gap:2px;text-align:right"><div style="font:500 13px 'IBM Plex Mono';color:#1b2a4e">CF-8Q2N-4TX7</div><div style="font:400 11px 'IBM Plex Sans';color:#5b6475">certfy.me/v</div></div>
@@ -423,6 +423,39 @@
 </article>
 </sc-if>
 
+<sc-if value="{{ isLegal }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Termos e privacidade" style="background:#fff">
+  <section style="padding:clamp(40px,7vw,80px) clamp(20px,5vw,64px) 24px;display:flex;flex-direction:column;gap:16px;max-width:820px">
+    <div style="font:500 12px 'IBM Plex Mono';letter-spacing:0.08em;text-transform:uppercase;color:#4a5876">Documentos legais</div>
+    <h1 style="margin:0;font:600 clamp(32px,5vw,46px)/1.1 'Source Serif 4',serif;color:#111c36;letter-spacing:-0.015em">{{ legal.title }}</h1>
+    <div style="font:400 14px 'IBM Plex Sans';color:#6b7385">{{ legal.updated }}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:4px">
+      <sc-for list="{{ legalTabs }}" as="c" hint-placeholder-count="2">
+        <button onClick="{{ c.set }}" style="height:34px;padding:0 14px;border-radius:99px;font:500 13px 'IBM Plex Sans';cursor:pointer;border:1px solid {{ c.bd }};background: {{ c.bg }};color: {{ c.fg }}">{{ c.label }}</button>
+      </sc-for>
+    </div>
+  </section>
+  <section style="padding:0 clamp(20px,5vw,64px) 80px;display:flex;flex-wrap:wrap;gap:32px 56px;align-items:flex-start">
+    <nav style="flex:0 1 240px;display:flex;flex-direction:column;gap:2px;position:sticky;top:16px">
+      <div style="font:500 12px 'IBM Plex Sans';color:#6b7385;margin-bottom:6px">Nesta página</div>
+      <sc-for list="{{ legal.sections }}" as="x">
+        <a onClick="{{ x.jump }}" style="font:400 14px/1.4 'IBM Plex Sans';color:#3a4356;cursor:pointer;text-decoration:none;padding:5px 0" style-hover="color:#111c36">{{ x.h }}</a>
+      </sc-for>
+    </nav>
+    <div style="flex:1 1 420px;max-width:720px;display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;gap:12px;padding:14px 16px;background:#fbf3e1;border:1px solid #efdcb0;border-radius:8px;font:400 14px/1.55 'IBM Plex Sans';color:#6b5520"><span style="font-weight:600;flex:none">!</span><span>Minuta para revisão jurídica. Razão social, CNPJ, endereço, foro e encarregado de dados são valores provisórios.</span></div>
+      <sc-for list="{{ legal.sections }}" as="x">
+        <div id="{{ x.id }}" style="display:flex;flex-direction:column;gap:10px;scroll-margin-top:16px">
+          <h2 style="margin:0;font:600 22px/1.3 'Source Serif 4',serif;color:#111c36">{{ x.h }}</h2>
+          <p style="margin:0;font:400 16px/1.7 'IBM Plex Sans';color:#2a3244;text-wrap:pretty">{{ x.p }}</p>
+        </div>
+      </sc-for>
+      <div style="padding-top:20px;border-top:1px solid #e3e6ec;font:400 14px/1.6 'IBM Plex Sans';color:#5b6475">Dúvidas sobre estes documentos? Escreva para privacidade@certfy.me.</div>
+    </div>
+  </section>
+</div>
+</sc-if>
+
 <sc-if value="{{ isMarketing }}" hint-placeholder-val="{{ true }}">
   <footer style="background:#111c36;color:#c9d1e3;padding:56px clamp(20px,5vw,64px) 28px;display:flex;flex-direction:column;gap:40px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:36px 32px">
@@ -434,17 +467,17 @@
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
         <div style="font:600 14px 'IBM Plex Sans';color:#fff;margin-bottom:4px">Produto</div>
-        <a style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Como funciona</a>
+        <a onClick="{{ go.howto }}" style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Como funciona</a>
         <a onClick="{{ go.benefits }}" style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Benefícios</a>
-        <a style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Preços</a>
-        <a style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Perguntas frequentes</a>
+        <a onClick="{{ go.pricing }}" style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Preços</a>
+        <a onClick="{{ go.faq }}" style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Perguntas frequentes</a>
         <a onClick="{{ go.blog }}" style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Blog</a>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
         <div style="font:600 14px 'IBM Plex Sans';color:#fff;margin-bottom:4px">Certificados</div>
         <a onClick="{{ go.login }}" style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Área do organizador</a>
         <a onClick="{{ go.validate }}" style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Validar certificado</a>
-        <a style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Suporte ao participante</a>
+        <a onClick="{{ go.participant }}" style="font:400 14px 'IBM Plex Sans';color:#c9d1e3;cursor:pointer;text-decoration:none">Página do participante</a>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
         <div style="font:600 14px 'IBM Plex Sans';color:#fff;margin-bottom:4px">Atendimento</div>
@@ -455,7 +488,7 @@
     </div>
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:24px;border-top:1px solid #2a3858;font:400 13px 'IBM Plex Sans';color:#9aa6c2">
       <div>© 2026 certfy.me</div>
-      <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center"><div style="display:flex;background:#1b2a4e;border-radius:6px;padding:3px"><sc-for list="{{ langs }}" as="l" hint-placeholder-count="3"><button onClick="{{ l.set }}" style="height:28px;padding:0 10px;border:0;border-radius:4px;font:600 12px 'IBM Plex Sans';cursor:pointer;color: {{ l.fgD }};background: {{ l.bgD }}">{{ l.label }}</button></sc-for></div><a style="color:#9aa6c2;cursor:pointer">Termos de uso</a><a style="color:#9aa6c2;cursor:pointer">Política de privacidade</a><a style="color:#9aa6c2;cursor:pointer">LGPD</a></div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center"><div style="display:flex;background:#1b2a4e;border-radius:6px;padding:3px"><sc-for list="{{ langs }}" as="l" hint-placeholder-count="3"><button onClick="{{ l.set }}" style="height:28px;padding:0 10px;border:0;border-radius:4px;font:600 12px 'IBM Plex Sans';cursor:pointer;color: {{ l.fgD }};background: {{ l.bgD }}">{{ l.label }}</button></sc-for></div><a onClick="{{ go.terms }}" style="color:#9aa6c2;cursor:pointer">Termos de uso</a><a onClick="{{ go.privacy }}" style="color:#9aa6c2;cursor:pointer">Política de privacidade</a><a onClick="{{ go.lgpd }}" style="color:#9aa6c2;cursor:pointer">LGPD</a></div>
     </div>
   </footer>
 </sc-if>
@@ -488,7 +521,7 @@
         </sc-if>
         <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">E-mail<input placeholder="voce@organizacao.com.br" defaultValue="contato@institutohorizonte.org" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
         <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">Senha<input type="password" defaultValue="12345678" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
-        <sc-if value="{{ isLoginTab }}"><a style="align-self:flex-end;font:500 13px 'IBM Plex Sans';cursor:pointer">Esqueci a senha</a></sc-if>
+        <sc-if value="{{ isLoginTab }}"><a onClick="{{ go.forgot }}" style="align-self:flex-end;font:500 13px 'IBM Plex Sans';cursor:pointer">Esqueci a senha</a></sc-if>
       </div>
       <button onClick="{{ go.dash }}" style="height:48px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 15px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">{{ authCta }}</button>
       <div style="font:400 13px/1.5 'IBM Plex Sans';color:#6b7385;text-align:center">Recebeu um certificado? <a onClick="{{ go.validate }}" style="cursor:pointer;font-weight:500">Valide aqui</a></div>
@@ -497,12 +530,80 @@
 </div>
 </sc-if>
 
+<sc-if value="{{ isForgot }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Recuperar senha" style="display:flex;flex-wrap:wrap;min-height:100vh;background:#fff">
+  <div style="flex:1 1 340px;background:#1b2a4e;color:#fff;padding:clamp(28px,5vw,56px);display:flex;flex-direction:column;justify-content:space-between;gap:40px">
+    <div onClick="{{ go.landing }}" style="display:flex;align-items:center;gap:10px;font:600 19px 'IBM Plex Sans';cursor:pointer"><div style="width:22px;height:22px;background:#fff;border-radius:4px;display:grid;place-items:center"><div style="width:8px;height:8px;border:2px solid #1b2a4e;border-radius:50%"></div></div><span>certfy<span style="opacity:.55;font-weight:500">.me</span></span></div>
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:440px">
+      <div style="font:600 clamp(26px,3.5vw,38px)/1.15 'Source Serif 4',serif;text-wrap:balance">Seus eventos e certificados continuam salvos.</div>
+      <div style="font:400 16px/1.6 'IBM Plex Sans';color:#c9d1e3">Trocar a senha não afeta os certificados emitidos nem os links enviados aos participantes.</div>
+    </div>
+    <div style="font:400 13px 'IBM Plex Mono';color:#9aa6c2">Precisa de ajuda? contact@certfy.me</div>
+  </div>
+  <div style="flex:1 1 360px;display:flex;align-items:center;justify-content:center;padding:48px 24px">
+    <div style="width:100%;max-width:380px;display:flex;flex-direction:column;gap:24px">
+      <a onClick="{{ go.login }}" style="font:500 14px 'IBM Plex Sans';cursor:pointer;text-decoration:none">‹ Voltar para o login</a>
+      <div style="display:flex;gap:6px">
+        <sc-for list="{{ fp.dots }}" as="d" hint-placeholder-count="3"><div style="flex:1;height:3px;border-radius:2px;background: {{ d }}"></div></sc-for>
+      </div>
+
+      <sc-if value="{{ fp.isReq }}">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <h1 style="margin:0;font:600 28px 'Source Serif 4',serif;color:#111c36">Recuperar senha</h1>
+          <p style="margin:0;font:400 15px/1.55 'IBM Plex Sans';color:#5b6475">Informe o e-mail da sua conta. Vamos enviar um link para você criar uma nova senha.</p>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">E-mail<input value="{{ fp.email }}" onChange="{{ fp.onEmail }}" placeholder="voce@organizacao.com.br" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+        <sc-if value="{{ fp.emailBad }}"><div style="font:400 14px 'IBM Plex Sans';color:#8a3b1c;background:#fbefe9;padding:10px 12px;border-radius:6px">Digite um e-mail válido.</div></sc-if>
+        <button onClick="{{ fp.send }}" style="height:48px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 15px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">Enviar link</button>
+      </sc-if>
+
+      <sc-if value="{{ fp.isSent }}">
+        <div style="width:48px;height:48px;border-radius:50%;background:#eef1f7;display:grid;place-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1b2a4e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <h1 style="margin:0;font:600 28px 'Source Serif 4',serif;color:#111c36">Confira seu e-mail</h1>
+          <p style="margin:0;font:400 15px/1.55 'IBM Plex Sans';color:#5b6475">{{ fp.sentText }}</p>
+        </div>
+        <sc-if value="{{ fp.resent }}"><div style="font:500 14px 'IBM Plex Sans';color:#1f5e3d;background:#eef6f1;padding:10px 12px;border-radius:6px">✓ Enviamos um novo link.</div></sc-if>
+        <button onClick="{{ fp.openLink }}" style="height:48px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 15px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">Abrir link do e-mail (simulação)</button>
+        <div style="font:400 13px/1.6 'IBM Plex Sans';color:#6b7385">Não chegou? Veja a caixa de spam ou <a onClick="{{ fp.resend }}" style="cursor:pointer;font-weight:500">reenvie o link</a>.</div>
+      </sc-if>
+
+      <sc-if value="{{ fp.isReset }}">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <h1 style="margin:0;font:600 28px 'Source Serif 4',serif;color:#111c36">Crie uma nova senha</h1>
+          <p style="margin:0;font:400 15px/1.55 'IBM Plex Sans';color:#5b6475">Ela substitui a senha anterior em todos os dispositivos.</p>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">Nova senha<input type="password" value="{{ fp.pw1 }}" onChange="{{ fp.onPw1 }}" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">Confirmar nova senha<input type="password" value="{{ fp.pw2 }}" onChange="{{ fp.onPw2 }}" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <sc-for list="{{ fp.reqs }}" as="r" hint-placeholder-count="3">
+            <div style="display:flex;align-items:center;gap:8px;font:400 14px 'IBM Plex Sans';color: {{ r.fg }}"><span style="width:16px;text-align:center;font-weight:600">{{ r.mark }}</span><span>{{ r.label }}</span></div>
+          </sc-for>
+        </div>
+        <button onClick="{{ fp.save }}" style="height:48px;color:#fff;border:0;border-radius:6px;font:600 15px 'IBM Plex Sans';cursor: {{ fp.cursor }};background: {{ fp.saveBg }}">Salvar nova senha</button>
+      </sc-if>
+
+      <sc-if value="{{ fp.isDone }}">
+        <div style="width:48px;height:48px;border-radius:50%;background:#1f5e3d;color:#fff;display:grid;place-items:center;font:600 22px 'IBM Plex Sans'">✓</div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <h1 style="margin:0;font:600 28px 'Source Serif 4',serif;color:#111c36">Senha alterada</h1>
+          <p style="margin:0;font:400 15px/1.55 'IBM Plex Sans';color:#5b6475">Pronto. Use a nova senha para entrar no painel.</p>
+        </div>
+        <button onClick="{{ go.login }}" style="height:48px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 15px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">Entrar</button>
+      </sc-if>
+    </div>
+  </div>
+</div>
+</sc-if>
+
 <sc-if value="{{ isApp }}" hint-placeholder-val="{{ false }}">
-<header style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 clamp(16px,4vw,40px);height:60px;background:#fff;border-bottom:1px solid #e3e6ec">
-  <div style="display:flex;align-items:center;gap:24px">
+<header style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 16px;padding:12px clamp(16px,4vw,40px);min-height:60px;background:#fff;border-bottom:1px solid #e3e6ec">
+  <div style="display:flex;align-items:center;flex-wrap:wrap;gap:10px 24px">
     <div onClick="{{ go.dash }}" style="display:flex;align-items:center;gap:10px;font:600 18px 'IBM Plex Sans';color:#1b2a4e;cursor:pointer"><div style="width:20px;height:20px;background:#1b2a4e;border-radius:4px;display:grid;place-items:center"><div style="width:7px;height:7px;border:2px solid #fff;border-radius:50%"></div></div><span>certfy<span style="opacity:.55;font-weight:500">.me</span></span></div>
-    <nav style="display:flex;gap:18px;font:500 14px 'IBM Plex Sans'">
-      <a onClick="{{ go.dash }}" style="cursor:pointer;text-decoration:none;color:#1b2a4e">Eventos</a>
+    <nav style="display:flex;flex-wrap:wrap;gap:6px 18px;font:500 14px 'IBM Plex Sans'">
+      <a onClick="{{ go.dash }}" style="cursor:pointer;text-decoration:none;color: {{ appNav.ev }}">Eventos</a>
+      <a onClick="{{ go.credits }}" style="cursor:pointer;text-decoration:none;color: {{ appNav.cr }}">Créditos</a>
+      <a onClick="{{ go.settings }}" style="cursor:pointer;text-decoration:none;color: {{ appNav.acc }}">Conta</a>
       <a onClick="{{ go.validate }}" style="cursor:pointer;text-decoration:none;color:#5b6475">Validar</a>
     </nav>
   </div>
@@ -518,6 +619,10 @@
     <div style="display:flex;flex-direction:column;gap:4px"><h1 style="margin:0;font:600 32px 'Source Serif 4',serif;color:#111c36">Eventos</h1><div style="font:400 15px 'IBM Plex Sans';color:#5b6475">Instituto Horizonte</div></div>
     <button onClick="{{ newEvent }}" style="height:44px;padding:0 18px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 15px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">+ Novo evento</button>
   </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 18px;background:#f5f7fb;border:1px solid #dfe5f1;border-radius:8px">
+    <div style="display:flex;flex-direction:column;gap:2px"><div style="font:600 15px 'IBM Plex Sans';color:#141a26">{{ creditLine }}</div><div style="font:400 13px 'IBM Plex Sans';color:#5b6475">Créditos valem por 12 meses e servem para qualquer evento.</div></div>
+    <a onClick="{{ go.credits }}" style="font:600 14px 'IBM Plex Sans';cursor:pointer;text-decoration:none">Comprar créditos ›</a>
+  </div>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#e3e6ec;border:1px solid #e3e6ec;border-radius:8px;overflow:hidden">
     <sc-for list="{{ stats }}" as="s" hint-placeholder-count="3">
       <div style="background:#fff;padding:20px 22px;display:flex;flex-direction:column;gap:6px"><div style="font:400 13px 'IBM Plex Sans';color:#5b6475">{{ s.label }}</div><div style="font:600 28px 'Source Serif 4',serif;color:#111c36">{{ s.value }}</div></div>
@@ -531,6 +636,169 @@
       </div>
     </sc-for>
   </div>
+</main>
+</sc-if>
+
+<sc-if value="{{ isSettings }}" hint-placeholder-val="{{ false }}">
+<main data-screen-label="Conta" style="padding:clamp(20px,4vw,40px);max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;flex-direction:column;gap:4px"><h1 style="margin:0;font:600 32px 'Source Serif 4',serif;color:#111c36">Conta</h1><div style="font:400 15px 'IBM Plex Sans';color:#5b6475">Instituto Horizonte</div></div>
+  <div style="display:flex;gap:4px;overflow-x:auto;overflow-y:hidden;box-shadow:inset 0 -1px 0 #e3e6ec">
+    <sc-for list="{{ setTabs }}" as="t" hint-placeholder-count="4">
+      <button onClick="{{ t.set }}" style="flex:none;height:42px;padding:0 14px;border:0;border-bottom:2px solid {{ t.bd }};background:transparent;font:500 14px 'IBM Plex Sans';color: {{ t.fg }};cursor:pointer;white-space:nowrap">{{ t.label }}</button>
+    </sc-for>
+  </div>
+  <sc-if value="{{ setToast.show }}">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 16px;background:#eef6f1;border:1px solid #cfe5d8;border-radius:6px;font:500 14px 'IBM Plex Sans';color:#1f5e3d"><span>✓ {{ setToast.text }}</span><a onClick="{{ setToast.close }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer;color:#1f5e3d">Fechar</a></div>
+  </sc-if>
+
+  <sc-if value="{{ isSetConta }}">
+    <section style="background:#fff;border:1px solid #e3e6ec;border-radius:8px;padding:clamp(18px,3vw,32px);display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;flex-direction:column;gap:4px"><h2 style="margin:0;font:600 22px 'Source Serif 4',serif;color:#111c36">Perfil e organização</h2><p style="margin:0;font:400 15px 'IBM Plex Sans';color:#5b6475">O nome da organização e o logo aparecem nos certificados, nos e-mails e na página do participante.</p></div>
+      <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start">
+        <div style="flex:2 1 360px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px">
+          <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">Seu nome<input defaultValue="Mariana Torres" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+          <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">E-mail de acesso<input defaultValue="contato@institutohorizonte.org" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+          <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">Organização<input defaultValue="Instituto Horizonte" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+          <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">CPF ou CNPJ para recibos (opcional)<input placeholder="00.000.000/0001-00" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26;font-family:'IBM Plex Mono'"></label>
+          <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">E-mail de contato para participantes<input defaultValue="eventos@institutohorizonte.org" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+          <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">País<input value="{{ countryDefault }}" readOnly="{{ true }}" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26;background:#fafbfc"></label>
+          <div style="grid-column:1/-1;display:flex;flex-direction:column;gap:8px">
+            <div style="font:500 13px 'IBM Plex Sans';color:#3a4356">Idioma dos e-mails e mensagens para participantes</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <sc-for list="{{ msgLangs }}" as="m" hint-placeholder-count="3">
+                <button onClick="{{ m.set }}" style="height:36px;padding:0 14px;border-radius:99px;font:500 14px 'IBM Plex Sans';cursor:pointer;border:1px solid {{ m.bd }};background: {{ m.bg }};color: {{ m.fg }}">{{ m.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+        <div style="flex:1 1 220px;display:flex;flex-direction:column;gap:10px">
+          <div style="font:500 13px 'IBM Plex Sans';color:#3a4356">Logo da organização</div>
+          <div style="aspect-ratio:2/1;border:1.5px dashed #b9c1d1;border-radius:8px;background: {{ logoBg }};display:grid;place-items:center;text-align:center;padding:12px"><sc-if value="{{ noLogo }}"><div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 13px 'IBM Plex Sans';color:#1b2a4e">Nenhum logo enviado</div><div style="font:400 11px 'IBM Plex Mono';color:#6b7385">PNG ou SVG · fundo transparente</div></div></sc-if></div>
+          <label style="align-self:flex-start;height:36px;padding:0 12px;display:flex;align-items:center;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 13px 'IBM Plex Sans';cursor:pointer">{{ logoBtn }}<input type="file" accept="image/*" onChange="{{ onLogo }}" style="display:none"></label>
+        </div>
+      </div>
+      <button onClick="{{ saveAccount }}" style="align-self:flex-start;height:44px;padding:0 20px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">Salvar alterações</button>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ isSetCred }}">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:#e3e6ec;border:1px solid #e3e6ec;border-radius:8px;overflow:hidden">
+      <sc-for list="{{ creditStats }}" as="s" hint-placeholder-count="3">
+        <div style="background:#fff;padding:20px 22px;display:flex;flex-direction:column;gap:6px"><div style="font:400 13px 'IBM Plex Sans';color:#5b6475">{{ s.label }}</div><div style="font:600 28px 'Source Serif 4',serif;color:#111c36">{{ s.value }}</div><div style="font:400 13px 'IBM Plex Sans';color:#6b7385">{{ s.note }}</div></div>
+      </sc-for>
+    </div>
+    <section style="background:#fff;border:1px solid #e3e6ec;border-radius:8px;padding:clamp(18px,3vw,32px);display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;flex-direction:column;gap:4px"><h2 style="margin:0;font:600 22px 'Source Serif 4',serif;color:#111c36">Comprar créditos</h2><p style="margin:0;font:400 15px 'IBM Plex Sans';color:#5b6475">Compre antes do evento e use quando quiser. Cada crédito emite um certificado, com frente e verso.</p></div>
+      <div style="display:flex;flex-wrap:wrap;gap:24px">
+        <div style="flex:1 1 300px;display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;align-items:stretch;height:56px;border:1px solid #cdd3de;border-radius:8px;overflow:hidden">
+            <button onClick="{{ qC.dec }}" style="width:56px;border:0;border-right:1px solid #e3e6ec;background:#f6f7f9;font:500 22px 'IBM Plex Sans';color:#1b2a4e;cursor:pointer">−</button>
+            <input value="{{ qC.val }}" onChange="{{ qC.set }}" inputMode="numeric" style="flex:1;min-width:0;border:0;text-align:center;font:600 26px 'Source Serif 4',serif;color:#111c36;outline:none">
+            <button onClick="{{ qC.inc }}" style="width:56px;border:0;border-left:1px solid #e3e6ec;background:#f6f7f9;font:500 22px 'IBM Plex Sans';color:#1b2a4e;cursor:pointer">+</button>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <sc-for list="{{ qC.presets }}" as="p">
+              <button onClick="{{ p.set }}" style="height:32px;padding:0 12px;border-radius:99px;font:500 13px 'IBM Plex Sans';cursor:pointer;border:1px solid {{ p.bd }};background: {{ p.bg }};color: {{ p.fg }}">{{ p.label }}</button>
+            </sc-for>
+          </div>
+          <sc-if value="{{ qC.hasHint }}"><div style="font:400 14px/1.5 'IBM Plex Sans';color:#1f5e3d;background:#eef6f1;padding:10px 12px;border-radius:6px">{{ qC.hint }}</div></sc-if>
+        </div>
+        <div style="flex:1 1 260px;border:1px solid #e3e6ec;border-radius:8px;overflow:hidden">
+          <sc-for list="{{ qC.tiers }}" as="t" hint-placeholder-count="3">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid #eef0f4;background: {{ t.bg }}">
+              <span style="font:500 14px 'IBM Plex Sans';color: {{ t.fg }}">{{ t.range }}</span>
+              <span style="font:600 16px 'IBM Plex Sans';color: {{ t.fg }}">{{ t.price }}</span>
+            </div>
+          </sc-for>
+          <div style="display:flex;flex-direction:column;gap:4px;padding:14px 16px;background:#fafbfc">
+            <div style="font:400 14px 'IBM Plex Sans';color:#5b6475">{{ qC.qtyLabel }} × {{ qC.unit }}</div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:500 15px 'IBM Plex Sans';color:#3a4356">Total</span><span style="font:600 30px 'Source Serif 4',serif;color:#111c36">{{ qC.total }}</span></div>
+          </div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;max-width:680px">
+        <sc-for list="{{ payMethods }}" as="m" hint-placeholder-count="3">
+          <button onClick="{{ m.set }}" style="min-height:58px;padding:10px 12px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;border-radius:8px;cursor:pointer;text-align:left;border:1.5px solid {{ m.bd }};background: {{ m.bg }}"><span style="font:600 14px 'IBM Plex Sans';color:#141a26">{{ m.label }}</span><span style="font:400 12px 'IBM Plex Sans';color:#6b7385">{{ m.note }}</span></button>
+        </sc-for>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <button onClick="{{ buyCredits }}" style="height:48px;padding:0 22px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 15px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">{{ buyLabel }}</button>
+        <span style="font:400 13px 'IBM Plex Sans';color:#6b7385">Pagamento simulado neste protótipo.</span>
+      </div>
+    </section>
+    <section style="background:#fff;border:1px solid #e3e6ec;border-radius:8px;overflow:hidden">
+      <div style="padding:18px 20px;border-bottom:1px solid #eef0f4;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><h2 style="margin:0;font:600 20px 'Source Serif 4',serif;color:#111c36">Histórico de compras</h2><a onClick="{{ exportPurchases }}" style="font:500 14px 'IBM Plex Sans';cursor:pointer">Exportar CSV</a></div>
+      <sc-for list="{{ purchaseRows }}" as="p">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:4px 16px;padding:14px 20px;border-bottom:1px solid #eef0f4;font:400 14px 'IBM Plex Sans'">
+          <span style="flex:0 0 96px;font:400 13px 'IBM Plex Mono';color:#5b6475">{{ p.date }}</span>
+          <span style="flex:1 1 200px;font-weight:500;color:#141a26">{{ p.desc }}</span>
+          <span style="flex:0 1 120px;color:#3a4356">{{ p.qty }}</span>
+          <span style="flex:0 1 110px;font-weight:600;color:#141a26">{{ p.total }}</span>
+          <span style="flex:1 1 120px;color:#1f5e3d">{{ p.status }}</span>
+          <a onClick="{{ p.receipt }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer">Recibo</a>
+        </div>
+      </sc-for>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ isSetSeg }}">
+    <section style="background:#fff;border:1px solid #e3e6ec;border-radius:8px;padding:clamp(18px,3vw,32px);display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;flex-direction:column;gap:4px"><h2 style="margin:0;font:600 22px 'Source Serif 4',serif;color:#111c36">Alterar senha</h2><p style="margin:0;font:400 15px 'IBM Plex Sans';color:#5b6475">Use pelo menos 8 caracteres, com letras e números.</p></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:720px">
+        <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">Senha atual<input type="password" defaultValue="12345678" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">Nova senha<input type="password" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">Confirmar nova senha<input type="password" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26"></label>
+      </div>
+      <button onClick="{{ savePassword }}" style="align-self:flex-start;height:44px;padding:0 20px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">Atualizar senha</button>
+    </section>
+    <section style="background:#fff;border:1px solid #e3e6ec;border-radius:8px;overflow:hidden">
+      <div style="padding:18px 20px;border-bottom:1px solid #eef0f4;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><h2 style="margin:0;font:600 20px 'Source Serif 4',serif;color:#111c36">Sessões ativas</h2><a onClick="{{ endSessions }}" style="font:500 14px 'IBM Plex Sans';cursor:pointer">Encerrar as outras sessões</a></div>
+      <sc-for list="{{ sessions }}" as="x">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:4px 16px;padding:14px 20px;border-bottom:1px solid #eef0f4;font:400 14px 'IBM Plex Sans'">
+          <span style="flex:1 1 220px;font-weight:500;color:#141a26">{{ x.device }}</span>
+          <span style="flex:1 1 160px;color:#5b6475">{{ x.place }}</span>
+          <span style="flex:0 1 160px;color: {{ x.fg }}">{{ x.when }}</span>
+        </div>
+      </sc-for>
+    </section>
+    <section style="background:#fff;border:1px solid #f0d3c4;border-radius:8px;padding:clamp(18px,3vw,32px);display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;flex-direction:column;gap:4px"><h2 style="margin:0;font:600 20px 'Source Serif 4',serif;color:#8a3b1c">Excluir conta e dados</h2><p style="margin:0;font:400 14px/1.6 'IBM Plex Sans';color:#5b6475;max-width:720px">Pedido de exclusão conforme a LGPD. Os certificados emitidos deixam de ser validados e os participantes perdem o acesso aos links. Recibos e dados fiscais são guardados pelo prazo exigido em lei. Créditos não usados não são reembolsados após 7 dias da compra.</p></div>
+      <sc-if value="{{ delClosed }}"><button onClick="{{ delOpen }}" style="align-self:flex-start;height:42px;padding:0 16px;background:#fff;color:#8a3b1c;border:1px solid #e3b9a5;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Solicitar exclusão</button></sc-if>
+      <sc-if value="{{ delIsOpen }}">
+        <div style="display:flex;flex-direction:column;gap:12px;padding:16px;background:#fbefe9;border-radius:8px">
+          <div style="font:500 14px/1.5 'IBM Plex Sans';color:#6e3a24">Antes de excluir, exporte a lista de links dos seus eventos. Esta ação não pode ser desfeita.</div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button onClick="{{ delConfirm }}" style="height:42px;padding:0 16px;background:#8a3b1c;color:#fff;border:0;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Confirmar exclusão</button>
+            <button onClick="{{ delCancel }}" style="height:42px;padding:0 16px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Cancelar</button>
+          </div>
+        </div>
+      </sc-if>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ isSetApi }}">
+    <section style="background:#fff;border:1px solid #e3e6ec;border-radius:8px;padding:clamp(18px,3vw,32px);display:flex;flex-direction:column;gap:20px">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <span style="align-self:flex-start;padding:4px 10px;border-radius:99px;font:500 12px 'IBM Plex Sans';background:#fbf3e1;color:#7a5c14">Em breve</span>
+        <h2 style="margin:0;font:600 22px 'Source Serif 4',serif;color:#111c36">API para integrações</h2>
+        <p style="margin:0;font:400 15px/1.6 'IBM Plex Sans';color:#5b6475;max-width:720px">Emita certificados direto da sua plataforma de inscrições, LMS ou CRM. A API usa os mesmos créditos da conta e devolve o link e o código de cada certificado.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;max-width:720px">
+        <div style="font:500 13px 'IBM Plex Sans';color:#3a4356">Chave de acesso</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><input value="cf_live_••••••••••••••••••••3f9a" readOnly="{{ true }}" style="flex:1 1 260px;min-width:0;height:42px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font:400 13px 'IBM Plex Mono';color:#8a93a6;background:#fafbfc"><button style="height:42px;padding:0 14px;background:#fff;color:#8a93a6;border:1px solid #e3e6ec;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:not-allowed">Gerar chave</button></div>
+      </div>
+      <div style="display:flex;flex-direction:column;border:1px solid #e3e6ec;border-radius:8px;overflow:hidden;max-width:720px">
+        <sc-for list="{{ apiEndpoints }}" as="e" hint-placeholder-count="4">
+          <div style="display:flex;flex-wrap:wrap;gap:4px 14px;padding:12px 16px;border-bottom:1px solid #eef0f4;align-items:baseline">
+            <span style="flex:0 0 52px;font:600 12px 'IBM Plex Mono';color: {{ e.fg }}">{{ e.method }}</span>
+            <span style="flex:1 1 240px;font:400 13px 'IBM Plex Mono';color:#141a26">{{ e.path }}</span>
+            <span style="flex:1 1 200px;font:400 13px 'IBM Plex Sans';color:#5b6475">{{ e.desc }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <button onClick="{{ apiNotify }}" style="align-self:flex-start;height:44px;padding:0 20px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="border-color:#1b2a4e">Avise-me quando lançar</button>
+    </section>
+  </sc-if>
 </main>
 </sc-if>
 
@@ -571,7 +839,7 @@
           <div style="font:400 14px 'IBM Plex Sans';color:#5b6475">.csv ou .xlsx, até 5.000 linhas</div>
           <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
             <button onClick="{{ doImport }}" style="height:42px;padding:0 18px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Selecionar arquivo</button>
-            <button style="height:42px;padding:0 18px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Baixar planilha modelo</button>
+            <button onClick="{{ dlTemplate }}" style="height:42px;padding:0 18px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Baixar planilha modelo</button>
           </div>
         </div>
       </sc-if>
@@ -810,12 +1078,29 @@
             </div>
           </sc-for>
         </div>
+        <div style="display:flex;flex-direction:column;gap:4px;margin-top:8px"><h3 style="margin:0;font:600 18px 'Source Serif 4',serif;color:#111c36">Página do participante</h3><p style="margin:0;font:400 14px/1.5 'IBM Plex Sans';color:#5b6475">Recursos extras que aparecem quando o participante abre o link. Não alteram o preço.</p></div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <sc-for list="{{ ppOpts }}" as="ch" hint-placeholder-count="3">
+            <div onClick="{{ ch.toggle }}" style="display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:8px;cursor:pointer;border:1.5px solid {{ ch.border }};background: {{ ch.bg }}">
+              <div style="width:20px;height:20px;border-radius:4px;flex:none;display:grid;place-items:center;font:600 13px 'IBM Plex Sans';color:#fff;margin-top:1px;background: {{ ch.box }};border:1.5px solid {{ ch.boxBorder }}">{{ ch.mark }}</div>
+              <div style="display:flex;flex-direction:column;gap:3px"><div style="font:600 15px 'IBM Plex Sans';color:#141a26">{{ ch.name }}</div><div style="font:400 14px/1.5 'IBM Plex Sans';color:#5b6475">{{ ch.desc }}</div></div>
+            </div>
+          </sc-for>
+        </div>
+        <sc-if value="{{ ppVideoOn }}">
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 16px;border:1px dashed #b9c1d1;border-radius:8px;background:#fafbfc">
+            <label style="height:38px;padding:0 14px;display:flex;align-items:center;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 13px 'IBM Plex Sans';cursor:pointer">{{ videoBtn }}<input type="file" accept="video/*" onChange="{{ onVideo }}" style="display:none"></label>
+            <span style="font:400 13px 'IBM Plex Sans';color:#5b6475">{{ videoNote }}</span>
+          </div>
+        </sc-if>
+        <a onClick="{{ go.participant }}" style="font:500 14px 'IBM Plex Sans';cursor:pointer">Ver como o participante vê ›</a>
         <button onClick="{{ send }}" style="align-self:flex-start;height:48px;padding:0 22px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 15px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">Emitir e enviar 142 certificados</button>
       </sc-if>
       <sc-if value="{{ sent }}">
-        <div style="display:flex;flex-direction:column;gap:4px"><h2 style="margin:0;font:600 22px 'Source Serif 4',serif;color:#111c36">142 certificados emitidos</h2><p style="margin:0;font:400 15px 'IBM Plex Sans';color:#5b6475">Enviados em 03/10/2026 às 14:32. Cada participante tem link público e código de validação.</p></div>
+        <div style="display:flex;flex-direction:column;gap:4px"><h2 style="margin:0;font:600 22px 'Source Serif 4',serif;color:#111c36">{{ sentTitle }}</h2><p style="margin:0;font:400 15px 'IBM Plex Sans';color:#5b6475">Enviados em 03/10/2026 às 14:32. Cada participante tem link público e código de validação.</p></div>
         <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <button style="height:40px;padding:0 16px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Exportar lista de links</button>
+          <button onClick="{{ exportLinks }}" style="height:40px;padding:0 16px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Exportar lista de links</button>
+          <button onClick="{{ pe.openAdd }}" style="height:40px;padding:0 16px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="border-color:#1b2a4e">+ Adicionar participante</button>
           <button onClick="{{ rs.openPending }}" style="height:40px;padding:0 16px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="border-color:#1b2a4e">Reenviar pendentes (3)</button>
           <button onClick="{{ rs.openAll }}" style="height:40px;padding:0 16px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">Reenviar para todos</button>
         </div>
@@ -840,16 +1125,33 @@
             </div>
           </div>
         </sc-if>
+        <sc-if value="{{ pe.open }}">
+          <div style="display:flex;flex-direction:column;gap:16px;padding:20px;border:1.5px solid #1b2a4e;border-radius:8px;background:#f5f7fb">
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 17px 'IBM Plex Sans';color:#141a26">{{ pe.title }}</div><div style="font:400 14px/1.5 'IBM Plex Sans';color:#5b6475">{{ pe.note }}</div></div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+              <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">Nome completo<input value="{{ pe.name }}" onChange="{{ pe.onName }}" placeholder="Como deve aparecer no certificado" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26;background:#fff"></label>
+              <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">E-mail<input value="{{ pe.email }}" onChange="{{ pe.onEmail }}" placeholder="nome@exemplo.com" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26;background:#fff"></label>
+              <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">WhatsApp (opcional)<input value="{{ pe.phone }}" onChange="{{ pe.onPhone }}" placeholder="(81) 99999-0000" style="height:44px;padding:0 12px;border:1px solid #d5dae3;border-radius:6px;font-size:15px;color:#141a26;background:#fff"></label>
+            </div>
+            <div onClick="{{ pe.toggleSend }}" style="display:flex;gap:10px;align-items:center;cursor:pointer;font:400 14px 'IBM Plex Sans';color:#3a4356"><div style="width:18px;height:18px;border-radius:4px;flex:none;display:grid;place-items:center;font:600 12px 'IBM Plex Sans';color:#fff;background: {{ pe.box }};border:1.5px solid {{ pe.boxBorder }}">{{ pe.mark }}</div>Enviar o certificado agora por e-mail e WhatsApp</div>
+            <sc-if value="{{ pe.hasError }}"><div style="font:400 14px 'IBM Plex Sans';color:#8a3b1c;background:#fbefe9;padding:10px 12px;border-radius:6px">{{ pe.error }}</div></sc-if>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <button onClick="{{ pe.save }}" style="height:42px;padding:0 18px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">{{ pe.cta }}</button>
+              <button onClick="{{ pe.cancel }}" style="height:42px;padding:0 18px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Cancelar</button>
+            </div>
+          </div>
+        </sc-if>
         <div style="border:1px solid #e3e6ec;border-radius:6px;overflow:hidden">
           <sc-for list="{{ sentRows }}" as="r">
-            
+
             <div style="display:flex;flex-wrap:wrap;align-items:center;gap:4px 16px;padding:12px 16px;border-bottom:1px solid #eef0f4;font:400 14px 'IBM Plex Sans'">
-              <span style="flex:1 1 180px;font-weight:500;color:#141a26">{{ r.name }}</span>
+              <span data-no-i18n="1" style="flex:1 1 180px;font-weight:500;color:#141a26">{{ r.name }}</span>
               <span style="flex:1 1 130px;font:400 13px 'IBM Plex Mono';color:#5b6475">{{ r.code }}</span>
               <span style="flex:1 1 220px;color: {{ r.fg }}">{{ r.status }}</span>
-              <div style="display:flex;gap:14px"><a onClick="{{ r.resend }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer">Reenviar</a><a onClick="{{ r.open }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer">Validar</a></div>
+              <div style="display:flex;gap:14px;flex-wrap:wrap"><a onClick="{{ r.edit }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer">Editar</a><a onClick="{{ r.resend }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer">Reenviar</a><a onClick="{{ r.page }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer">Ver página</a><a onClick="{{ r.open }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer">Validar</a></div>
             </div>
           </sc-for>
+          <div style="padding:12px 16px;font:400 14px 'IBM Plex Sans';color:#5b6475;background:#fafbfc">{{ sentMore }}</div>
         </div>
       </sc-if>
     </sc-if>
@@ -940,9 +1242,9 @@
           </sc-for>
         </div>
         <div style="display:flex;gap:10px;flex-wrap:wrap;padding:16px 20px 20px">
-          <button style="height:42px;padding:0 16px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Ver certificado original</button>
-          <button style="height:42px;padding:0 16px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Baixar PDF</button>
-          <button style="height:42px;padding:0 16px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Adicionar ao LinkedIn</button>
+          <button onClick="{{ valOpen }}" style="height:42px;padding:0 16px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Ver certificado original</button>
+          <button onClick="{{ valPdf }}" style="height:42px;padding:0 16px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Baixar PDF</button>
+          <button onClick="{{ valLinkedin }}" style="height:42px;padding:0 16px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer">Adicionar ao LinkedIn</button>
         </div>
       </div>
     </sc-if>
@@ -953,6 +1255,141 @@
       </div>
     </sc-if>
     <div style="font:400 13px/1.6 'IBM Plex Sans';color:#6b7385">Teste: CF-8Q2N-4TX7 é válido; qualquer outro código não existe.<br>Dúvidas sobre um certificado? Fale com a organização do evento ou com o <a style="cursor:pointer">suporte ao participante</a>.</div>
+  </main>
+</div>
+</sc-if>
+
+<sc-if value="{{ isParticipant }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Participante" style="display:flex;flex-direction:column;background:#f6f7f9">
+  <header style="display:flex;align-items:center;justify-content:space-between;gap:12px 16px;flex-wrap:wrap;padding:18px clamp(20px,5vw,64px);background:#fff;border-bottom:1px solid #e3e6ec">
+    <div onClick="{{ go.landing }}" style="display:flex;align-items:center;gap:10px;font:600 19px 'IBM Plex Sans';color:#1b2a4e;cursor:pointer"><div style="width:22px;height:22px;background:#1b2a4e;border-radius:4px;display:grid;place-items:center"><div style="width:8px;height:8px;border:2px solid #fff;border-radius:50%"></div></div><span>certfy<span style="opacity:.55;font-weight:500">.me</span></span></div>
+    <div style="display:flex;align-items:center;gap:16px">
+      <div style="display:flex;background:#f0f2f6;border-radius:6px;padding:3px">
+        <sc-for list="{{ langs }}" as="l" hint-placeholder-count="3">
+          <button onClick="{{ l.set }}" style="height:28px;padding:0 10px;border:0;border-radius:4px;font:600 12px 'IBM Plex Sans';cursor:pointer;color:#1b2a4e;background: {{ l.bg }}">{{ l.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+  </header>
+  <main style="width:100%;max-width:1040px;margin:0 auto;padding:clamp(28px,5vw,56px) 20px 96px;display:flex;flex-direction:column;gap:24px">
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font:500 12px 'IBM Plex Mono';letter-spacing:0.08em;text-transform:uppercase;color:#4a5876">{{ pp.org }}</div>
+      <h1 data-no-i18n="1" style="margin:0;font:600 clamp(28px,4vw,40px)/1.15 'Source Serif 4',serif;color:#111c36;text-wrap:balance">{{ pp.hello }}</h1>
+      <p data-no-i18n="1" style="margin:0;font:400 16px/1.6 'IBM Plex Sans';color:#5b6475">{{ pp.sub }}</p>
+    </div>
+
+    <sc-if value="{{ pp.toast }}">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 16px;background:#eef6f1;border:1px solid #cfe5d8;border-radius:6px;font:500 14px 'IBM Plex Sans';color:#1f5e3d"><span>✓ {{ pp.toastText }}</span><a onClick="{{ pp.closeToast }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer;color:#1f5e3d">Fechar</a></div>
+    </sc-if>
+
+    <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start">
+      <div style="flex:3 1 480px;min-width:0;display:flex;flex-direction:column;gap:12px">
+        <sc-if value="{{ pp.hasBack }}">
+          <div style="align-self:flex-start;display:flex;background:#e9ecf2;border-radius:6px;padding:3px;gap:2px">
+            <sc-for list="{{ pp.sides }}" as="o"><button onClick="{{ o.set }}" style="height:32px;padding:0 16px;border:0;border-radius:4px;font:500 13px 'IBM Plex Sans';color:#1b2a4e;cursor:pointer;background: {{ o.bg }};box-shadow: {{ o.sh }}">{{ o.label }}</button></sc-for>
+          </div>
+        </sc-if>
+        <sc-if value="{{ pp.front }}">
+          <div style="container-type:inline-size;width:100%">
+            <div style="position:relative;aspect-ratio:1.414;overflow:hidden;user-select:none;background: {{ cert.bg }};border: {{ cert.border }};outline: {{ cert.outline }};outline-offset:-2.4cqw;box-shadow:0 12px 40px rgba(17,28,54,.12)">
+              <sc-if value="{{ cert.band }}"><div style="position:absolute;left:0;top:0;bottom:0;width:5cqw;background:#1b2a4e;pointer-events:none"></div></sc-if>
+              <sc-for list="{{ fieldsView }}" as="f">
+                <div style="position:absolute;left: {{ f.left }};top: {{ f.top }};width: {{ f.width }};font-family: {{ f.family }};font-size: {{ f.fs }};font-weight: {{ f.weight }};font-style: {{ f.italic }};color: {{ f.color }};text-align: {{ f.align }};letter-spacing: {{ f.ls }};text-transform: {{ f.tt }};line-height:1.35;white-space:normal">
+                  <sc-if value="{{ f.isText }}"><span data-no-i18n="1" style="white-space:pre-wrap">{{ f.text }}</span></sc-if>
+                  <sc-if value="{{ f.isSign }}"><div style="display:flex;flex-direction:column;gap:0.3cqw;align-items: {{ f.flexAlign }}"><div style="width:100%;height:1px;background: {{ f.color }};margin-bottom:0.6cqw"></div><div style="font-weight:600">{{ f.signName }}</div><div style="opacity:.75">{{ f.signRole }}</div></div></sc-if>
+                  <sc-if value="{{ f.isQr }}"><div style="display:flex;align-items:center;gap:1.2cqw;justify-content: {{ f.flexAlign }}"><div style="display:flex;flex-direction:column;gap:0.3cqw;text-align:right"><div style="font-family:'IBM Plex Mono',monospace;font-weight:500">{{ f.code }}</div><div style="font-size:0.85em;opacity:.75">certfy.me/v</div></div><div style="width: {{ f.qrSize }};aspect-ratio:1;flex:none;display:grid;grid-template-columns:repeat(21,1fr);background:#fff;padding:0.3cqw"><sc-for list="{{ f.qr }}" as="q"><div style="background: {{ q }}"></div></sc-for></div></div></sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ pp.back }}">
+          <div style="container-type:inline-size;width:100%">
+            <div style="position:relative;aspect-ratio:1.414;overflow:hidden;background:#fff;border:1px solid #d5dae3;box-shadow:0 12px 40px rgba(17,28,54,.12);padding:6cqw 7cqw;display:flex;flex-direction:column;gap:2cqw">
+              <div style="font:500 1.5cqw 'IBM Plex Sans';letter-spacing:0.18em;text-transform:uppercase;color:#4a5876">Verso</div>
+              <div style="font:600 3.6cqw/1.1 'Source Serif 4',serif;color:#111c36">Conteúdo programático</div>
+              <div style="display:flex;flex-direction:column;gap:1.1cqw;margin-top:1cqw">
+                <sc-for list="{{ pp.program }}" as="it" hint-placeholder-count="5">
+                  <div style="display:flex;gap:2cqw;font:400 1.9cqw/1.4 'IBM Plex Sans';color:#2a3244;padding-bottom:1.1cqw;border-bottom:1px solid #eef0f4"><span style="flex:0 0 9cqw;font-family:'IBM Plex Mono';color:#6b7385">{{ it.t }}</span><span>{{ it.d }}</span></div>
+                </sc-for>
+              </div>
+              <div style="flex:1"></div>
+              <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:2cqw;font:400 1.6cqw 'IBM Plex Sans';color:#4a5876">
+                <span data-no-i18n="1">{{ pp.backHours }}</span>
+                <span style="font-family:'IBM Plex Mono';color:#2a3244">{{ pp.code }} · certfy.me/v</span>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+      <aside style="flex:1 1 260px;display:flex;flex-direction:column;gap:12px">
+        <button onClick="{{ pp.pdf }}" style="height:48px;padding:0 18px;background:#1b2a4e;color:#fff;border:0;border-radius:6px;font:600 15px 'IBM Plex Sans';cursor:pointer" style-hover="background:#111c36">Baixar PDF</button>
+        <button onClick="{{ pp.linkedin }}" style="height:44px;padding:0 18px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="border-color:#1b2a4e">Adicionar ao LinkedIn</button>
+        <div style="display:flex;gap:8px">
+          <button onClick="{{ pp.whatsapp }}" style="flex:1;height:44px;padding:0 12px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="border-color:#1b2a4e">WhatsApp</button>
+          <button onClick="{{ pp.copy }}" style="flex:1;height:44px;padding:0 12px;background:#fff;color:#1b2a4e;border:1px solid #cdd3de;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer" style-hover="border-color:#1b2a4e">Copiar link</button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;padding:16px;background:#fff;border:1px solid #e3e6ec;border-radius:8px;margin-top:4px">
+          <div style="display:flex;align-items:center;gap:8px;font:600 14px 'IBM Plex Sans';color:#1f5e3d"><span style="width:18px;height:18px;border-radius:50%;background:#1f5e3d;color:#fff;display:grid;place-items:center;font-size:11px">✓</span>Certificado verificável</div>
+          <div style="font:500 16px 'IBM Plex Mono';color:#141a26;letter-spacing:0.03em">{{ pp.code }}</div>
+          <div style="font:400 13px/1.5 'IBM Plex Sans';color:#5b6475">Qualquer pessoa pode confirmar a autenticidade com este código ou pelo QR code impresso.</div>
+          <a onClick="{{ pp.validate }}" style="font:500 13px 'IBM Plex Sans';cursor:pointer">Ver validação pública ›</a>
+        </div>
+      </aside>
+    </div>
+
+    <sc-if value="{{ pp.showSurvey }}">
+      <section style="background:#fff;border:1.5px solid #1b2a4e;border-radius:10px;padding:clamp(18px,3vw,28px);display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 18px 'IBM Plex Sans';color:#141a26">Pesquisa rápida da organização</div><div style="font:400 14px/1.5 'IBM Plex Sans';color:#5b6475">3 perguntas, menos de 1 minuto. As respostas ajudam a melhorar a próxima edição. Seu certificado já está liberado.</div></div>
+        <sc-for list="{{ pp.questions }}" as="q" hint-placeholder-count="3">
+          <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px">
+            <div style="font:500 15px 'IBM Plex Sans';color:#141a26">{{ q.label }}</div>
+            <div style="display:flex;gap:6px">
+              <sc-for list="{{ q.opts }}" as="o"><button onClick="{{ o.set }}" style="width:40px;height:40px;border-radius:6px;font:600 14px 'IBM Plex Sans';cursor:pointer;border:1px solid {{ o.bd }};background: {{ o.bg }};color: {{ o.fg }}">{{ o.label }}</button></sc-for>
+            </div>
+          </div>
+        </sc-for>
+        <div style="font:400 12px 'IBM Plex Sans';color:#8a93a6;margin-top:-8px">1 = ruim · 5 = excelente</div>
+        <label style="display:flex;flex-direction:column;gap:6px;font:500 13px 'IBM Plex Sans';color:#3a4356">O que podemos melhorar? (opcional)<textarea rows="2" style="padding:10px 12px;border:1px solid #d5dae3;border-radius:6px;font:400 14px/1.5 'IBM Plex Sans';color:#141a26;resize:vertical"></textarea></label>
+        <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+          <button onClick="{{ pp.sendSurvey }}" style="height:44px;padding:0 18px;border:0;border-radius:6px;font:600 14px 'IBM Plex Sans';color:#fff;cursor: {{ pp.surveyCursor }};background: {{ pp.surveyBg }}">Enviar respostas</button>
+          <a onClick="{{ pp.skipSurvey }}" style="font:500 14px 'IBM Plex Sans';cursor:pointer">Agora não</a>
+        </div>
+      </section>
+    </sc-if>
+    <sc-if value="{{ pp.hasVideo }}">
+      <section style="display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center;padding:clamp(16px,3vw,24px);background:#fff;border:1px solid #e3e6ec;border-radius:10px">
+        <div onClick="{{ pp.play }}" style="flex:1 1 320px;max-width:520px;aspect-ratio:16/9;border-radius:8px;background:linear-gradient(135deg,#1b2a4e,#111c36);position:relative;display:grid;place-items:center;cursor:pointer">
+          <sc-if value="{{ pp.notPlaying }}"><div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center"><div style="width:0;height:0;border-top:11px solid transparent;border-bottom:11px solid transparent;border-left:18px solid #1b2a4e;margin-left:5px"></div></div></sc-if>
+          <sc-if value="{{ pp.playing }}"><div style="font:500 14px 'IBM Plex Sans';color:#c9d1e3">Reprodução simulada · toque para pausar</div></sc-if>
+          <span style="position:absolute;left:12px;bottom:10px;font:500 12px 'IBM Plex Mono';color:#c9d1e3">1:12</span>
+        </div>
+        <div style="flex:1 1 240px;display:flex;flex-direction:column;gap:8px">
+          <div style="font:500 12px 'IBM Plex Mono';letter-spacing:0.08em;text-transform:uppercase;color:#4a5876">Mensagem do organizador</div>
+          <div data-no-i18n="1" style="font:600 20px/1.3 'Source Serif 4',serif;color:#111c36">{{ pp.videoTitle }}</div>
+          <div style="font:400 14px/1.6 'IBM Plex Sans';color:#5b6475">Um agradecimento gravado para quem participou do evento.</div>
+        </div>
+      </section>
+    </sc-if>
+
+    <section style="background:#fff;border:1px solid #e3e6ec;border-radius:10px;overflow:hidden">
+      <div style="padding:16px 20px;border-bottom:1px solid #eef0f4;font:600 16px 'IBM Plex Sans';color:#141a26">Dados do certificado</div>
+      <div style="display:flex;flex-direction:column;padding:4px 20px">
+        <sc-for list="{{ pp.rows }}" as="vr" hint-placeholder-count="7">
+          <div style="display:flex;flex-wrap:wrap;gap:4px 16px;padding:12px 0;border-bottom:1px solid #eef0f4">
+            <div style="flex:0 0 150px;font:400 14px 'IBM Plex Sans';color:#5b6475">{{ vr.k }}</div>
+            <div data-no-i18n="1" style="flex:1 1 200px;font:500 15px 'IBM Plex Sans';color:#141a26">{{ vr.v }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <div style="display:flex;flex-direction:column;gap:6px;padding:18px 20px;background:#fff;border:1px solid #e3e6ec;border-radius:10px">
+      <div style="font:600 15px 'IBM Plex Sans';color:#141a26">Encontrou um erro no seu nome ou nos dados?</div>
+      <div style="font:400 14px/1.6 'IBM Plex Sans';color:#5b6475">Fale com a organização do evento. A correção é feita sem custo e o código de validação continua o mesmo.</div>
+      <div style="font:500 14px 'IBM Plex Sans';color:#1b2a4e">eventos@institutohorizonte.org</div>
+    </div>
+    <div style="font:400 13px/1.6 'IBM Plex Sans';color:#6b7385;text-align:center">Certificado emitido pela certfy.me em nome da organização do evento. Você não precisa criar conta para acessar.</div>
   </main>
 </div>
 </sc-if>
@@ -982,7 +1419,51 @@ class Component extends DCLogic {
     ch: { email: true, link: true, whatsapp: true },
     ev: { name: 'Semana de Inovação 2026', org: 'Instituto Horizonte', date: '24/10/2026', place: 'Centro de Convenções, Recife', hours: '8', signer: 'Dra. Helena Duarte', role: 'Diretora executiva' },
     valCode: 'CF-8Q2N-4TX7', valState: 'valid', valIdx: 0, valCodeShown: '',
-    fields: null, selId: null, guideV: false, guideH: false, artUrl: null, customized: false
+    fields: null, selId: null, guideV: false, guideH: false, artUrl: null, customized: false,
+    viewIdx: 0, certSide: 'front', ppOpt: { survey: true, back: true, video: true }, videoName: '', surveyR: {}, surveyDone: false, ppToast: '', playing: false,
+    pEdits: {}, added: [], pe: null, peForm: { name: '', email: '', phone: '' }, peSend: true, peErr: '',
+    forgotStep: 'request', fEmail: 'contato@institutohorizonte.org', fBad: false, fResent: false, pw1: '', pw2: '',
+    setTab: 'conta', setMsg: '', msgLang: 'pt', logoUrl: null, delOpen: false, qtyC: 100, credits: 58,
+    purchases: [{ date: '03/10/2026', desc: 'Semana de Inovação 2026', qty: 150, method: 'pix' }, { date: '20/08/2026', desc: 'Créditos avulsos', qty: 350, method: 'card' }, { date: '02/07/2026', desc: 'Créditos avulsos', qty: 100, method: 'boleto' }],
+    legalDoc: 'terms'
+  };
+  addCodes = ['CF-1HXK-5ZQ3', 'CF-8DTW-3MJ6', 'CF-5PRA-9KE2', 'CF-3VNC-7LB4', 'CF-9GYS-2WT8'];
+  personAt(i) { const n = this.contacts.length; const s = this.state; if (i < n) return s.pEdits[i] || this.contacts[i]; return s.added[i - n] || this.contacts[0]; }
+  codeAt(i) { const n = this.contacts.length; return i < n ? this.codes[i] : this.addCodes[(i - n) % this.addCodes.length]; }
+  allCodes() { return this.codes.concat(this.addCodes.slice(0, this.state.added.length)); }
+  download(name, rows) {
+    const csv = rows.map(r => r.map(v => /[",;\n]/.test(String(v)) ? '"' + String(v).replace(/"/g, '""') + '"' : v).join(',')).join('\r\n');
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8' })); a.download = name;
+    document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+  copy(text) { try { navigator.clipboard && navigator.clipboard.writeText(text); } catch (e) {} }
+  scrollToId(id) { setTimeout(() => { const el = document.getElementById(id); if (el) el.scrollIntoView({ block: 'start' }); }, 80); }
+  legalDocs = {
+    terms: { title: 'Termos de uso', sections: [
+      ['Sobre a certfy.me', 'A certfy.me é uma plataforma on-line para emitir, enviar e validar certificados de eventos, operada por Razão social Ltda., CNPJ 00.000.000/0001-00. Ao criar uma conta ou usar a plataforma, você concorda com estes termos.'],
+      ['Quem pode usar', 'Organizadores de eventos, pessoas físicas ou jurídicas, maiores de 18 anos e capazes de assumir obrigações. Participantes e qualquer pessoa podem abrir certificados e validar códigos sem criar conta.'],
+      ['Conta do organizador', 'Você é responsável pelas informações da conta, pela guarda da senha e por tudo o que for feito com ela. Avise-nos imediatamente se suspeitar de uso indevido.'],
+      ['Créditos, preços e pagamento', 'A plataforma cobra por certificado emitido, sem mensalidade. Os créditos são comprados antes da emissão, valem por 12 meses a partir da compra e podem ser usados em qualquer evento da conta. Os pagamentos são processados pela Stripe. Os preços vigentes estão publicados no site.'],
+      ['Reembolso', 'Créditos não usados podem ser reembolsados em até 7 dias após a compra, conforme o Código de Defesa do Consumidor. Certificados já emitidos não são reembolsáveis, mas a reemissão para corrigir dados é gratuita.'],
+      ['Responsabilidades do organizador', 'O organizador responde pela veracidade dos dados do evento e dos participantes, pela autorização para usar esses dados e pelo conteúdo, pela arte e pelas assinaturas dos certificados. A certfy.me não verifica se o evento aconteceu nem se a participação ocorreu.'],
+      ['Usos proibidos', 'É proibido emitir certificados falsos ou de eventos que não aconteceram, usar marcas ou assinaturas sem autorização, enviar mensagens não solicitadas e tentar burlar a validação. Contas que violarem estas regras podem ser suspensas e os certificados, invalidados.'],
+      ['Disponibilidade dos certificados', 'Os certificados e a página de validação ficam disponíveis por tempo indeterminado enquanto a plataforma estiver em operação. Se o serviço for encerrado, avisaremos com pelo menos 90 dias de antecedência e ofereceremos a exportação dos certificados.'],
+      ['Propriedade intelectual', 'A marca, o software e os modelos da certfy.me pertencem à certfy.me. A arte enviada pelo organizador continua sendo dele, que nos autoriza a usá-la apenas para gerar e exibir os certificados.'],
+      ['Alterações e foro', 'Podemos atualizar estes termos e avisaremos por e-mail sobre mudanças relevantes. Fica eleito o foro da comarca da sede da empresa para resolver qualquer questão relacionada a estes termos.']
+    ] },
+    privacy: { title: 'Política de privacidade', sections: [
+      ['A quem se aplica', 'Esta política explica como a certfy.me trata dados pessoais, de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018) e, quando aplicável, o Regulamento Geral de Proteção de Dados da União Europeia (GDPR).'],
+      ['Papéis no tratamento', 'Para os dados dos organizadores (conta e pagamento), a certfy.me é a controladora. Para os dados dos participantes, enviados pelo organizador, o organizador é o controlador e a certfy.me atua como operadora, tratando os dados apenas para emitir, enviar e validar os certificados.'],
+      ['Dados que coletamos', 'Do organizador: nome, e-mail, organização, dados de cobrança e registros de acesso. Do participante: nome, e-mail, WhatsApp e, se o organizador ativar, as respostas da pesquisa de satisfação. Não pedimos documentos de identificação dos participantes.'],
+      ['Para que usamos', 'Para criar e manter a conta, processar pagamentos, gerar os certificados, enviá-los por e-mail e WhatsApp, permitir a validação pública e prestar suporte. Não vendemos dados pessoais nem os usamos para publicidade de terceiros.'],
+      ['O que fica público', 'A página de validação mostra o nome do participante, o evento, a data, o local, a carga horária, a organização emissora e quem assinou. Ela só é encontrada por quem tem o código ou o link do certificado.'],
+      ['Compartilhamento', 'Compartilhamos dados apenas com fornecedores necessários ao serviço: processamento de pagamentos (Stripe), envio de e-mails, envio de mensagens de WhatsApp e hospedagem. Todos têm obrigações contratuais de confidencialidade e segurança.'],
+      ['Transferência internacional', 'Alguns fornecedores armazenam dados fora do Brasil. Nesses casos, adotamos as salvaguardas previstas na LGPD, como cláusulas contratuais padrão.'],
+      ['Por quanto tempo guardamos', 'Os certificados ficam disponíveis enquanto a conta do organizador existir, para permitir a validação. Dados de cobrança são guardados pelo prazo da legislação fiscal. Registros de acesso são guardados por 6 meses, conforme o Marco Civil da Internet.'],
+      ['Seus direitos (LGPD)', 'Você pode pedir confirmação do tratamento, acesso, correção, anonimização, portabilidade e exclusão dos seus dados, além de revogar consentimentos. Participantes devem procurar primeiro a organização do evento; também atendemos pelo e-mail do encarregado.'],
+      ['Encarregado e contato', 'Encarregado pelo tratamento de dados: nome a definir, privacidade@certfy.me. Respondemos em até 15 dias.'],
+      ['Cookies', 'Usamos apenas cookies necessários para manter o login e lembrar o idioma. Não usamos cookies de publicidade.']
+    ] }
   };
   canvasRef = React.createRef();
   layout(tpl) {
@@ -1087,6 +1568,7 @@ class Component extends DCLogic {
   onUp = () => { this.drag = null; window.removeEventListener('pointermove', this.onMove); window.removeEventListener('pointerup', this.onUp); this.setState({ guideV: false, guideH: false }); };
   componentWillUnmount() { this.onUp(); if (this.obs) this.obs.disconnect(); }
   L(pt, en, es) { const l = this.state.lang || 'pt'; return l === 'en' ? en : l === 'es' ? es : pt; }
+  tr(t) { const i = { en: 0, es: 1 }[this.state.lang || 'pt']; const d = window.CERTFY_I18N || {}; return i === undefined || !d[t] ? t : d[t][i]; }
   setLang(l) {
     try { history.replaceState(null, '', location.pathname + location.search + (l === 'pt' ? '' : '#/' + l)); } catch (e) {}
     this.setState(st => ({ lang: l, fields: st.customized ? st.fields : null, pay: l === 'pt' ? st.pay : (['pix', 'boleto'].includes(st.pay) ? 'card' : st.pay) }), () => { this.i18nWalk(document.body); requestAnimationFrame(() => this.i18nWalk(document.body)); setTimeout(() => this.i18nWalk(document.body), 60); });
@@ -1171,9 +1653,15 @@ class Component extends DCLogic {
     const mob = s.device === 'mobile';
     const go = {
       landing: () => this.nav('landing'), login: () => this.nav('login', { authTab: 'login' }), signup: () => this.nav('login', { authTab: 'signup' }),
-      dash: () => this.nav('dash'), validate: () => this.nav('validate'), benefits: () => this.nav('benefits'), blog: () => this.nav('blog')
+      dash: () => this.nav('dash'), validate: () => this.nav('validate'), benefits: () => this.nav('benefits'), blog: () => this.nav('blog'),
+      howto: () => { this.nav('landing'); this.scrollToId('como-funciona'); }, pricing: () => { this.nav('landing'); this.scrollToId('precos'); }, faq: () => { this.nav('landing'); this.scrollToId('perguntas'); },
+      participant: () => this.nav('participant', { viewIdx: 0, certSide: 'front', ppToast: '', playing: false }),
+      forgot: () => this.nav('forgot', { forgotStep: 'request', fBad: false, fResent: false, pw1: '', pw2: '' }),
+      settings: () => this.nav('settings', { setTab: 'conta', setMsg: '' }), credits: () => this.nav('settings', { setTab: 'creditos', setMsg: '' }),
+      terms: () => this.nav('legal', { legalDoc: 'terms' }), privacy: () => this.nav('legal', { legalDoc: 'privacy' }),
+      lgpd: () => { this.nav('legal', { legalDoc: 'privacy' }); this.scrollToId('legal-privacy-8'); }
     };
-    const isApp = s.screen === 'dash' || s.screen === 'wizard' || s.screen === 'validate' && s.fromApp;
+    const isApp = s.screen === 'dash' || s.screen === 'wizard' || s.screen === 'settings' || s.screen === 'validate' && s.fromApp;
     const evOn = {}; Object.keys(s.ev).forEach(k => { evOn[k] = e => this.setState({ ev: { ...s.ev, [k]: e.target.value } }); });
     const labels = ['Evento', 'Participantes', 'Modelo', 'Editor', 'Prévia', 'Pagamento', 'Envio'];
     const steps = labels.map((label, i) => {
@@ -1187,7 +1675,9 @@ class Component extends DCLogic {
       };
     });
     const goStep = n => { this.setState({ step: n, maxStep: Math.max(s.maxStep, n) }); window.scrollTo(0, 0); };
-    const c = this.contacts[s.pIdx % this.contacts.length];
+    const isPart = s.screen === 'participant';
+    const curIdx = isPart ? s.viewIdx : s.pIdx % this.contacts.length;
+    const c = this.personAt(curIdx);
     const fill = t => t.replace(/\{(organization|organizacion)\}/g, s.ev.org).replace(/\{(name|nombre)\}/g, c[0]).replace(/\{(event)\}/g, s.ev.name).replace(/\{(date|fecha)\}/g, s.ev.date).replace(/\{(location|lugar)\}/g, s.ev.place).replace(/\{(hours|horas)\}/g, s.ev.hours).replace(/\{organizacao\}/g, s.ev.org).replace(/\{assinante\}/g, s.ev.signer).replace(/\{cargo\}/g, s.ev.role).replace(/\{nome\}/g, c[0]).replace(/\{email\}/g, c[1]).replace(/\{evento\}/g, s.ev.name).replace(/\{data\}/g, s.ev.date).replace(/\{local\}/g, s.ev.place).replace(/\{carga_horaria\}/g, s.ev.hours);
     const certs = {
       classico: { bg: '#fffdf8', border: '0.6cqw solid #1b2a4e', outline: '0.2cqw solid #1b2a4e', band: false, own: false, align: 'center', talign: 'center' },
@@ -1204,22 +1694,40 @@ class Component extends DCLogic {
     ];
     const channels = chDefs.map(([k, name, desc]) => { const on = s.ch[k]; return { name, desc, toggle: () => this.setState({ ch: { ...s.ch, [k]: !on } }), border: on ? '#1b2a4e' : '#e3e6ec', bg: on ? '#f5f7fb' : '#fff', box: on ? '#1b2a4e' : '#fff', boxBorder: on ? '#1b2a4e' : '#b9c1d1', mark: on ? '✓' : '' }; });
     const sentStatus = [['E-mail entregue · WhatsApp lido', '#1f5e3d'], ['E-mail aberto · WhatsApp entregue', '#1f5e3d'], ['E-mail entregue · sem WhatsApp', '#7a5c14'], ['E-mail entregue · WhatsApp lido', '#1f5e3d'], ['E-mail não entregue', '#8a3b1c'], ['E-mail aberto · WhatsApp lido', '#1f5e3d']];
-    const sentRows = this.contacts.slice(0, 6).map((ct, i) => ({ name: ct[0], code: this.codes[i], status: (s.resent || {})[i] ? this.L('Reenviado agora · ', 'Resent just now · ', 'Reenviado ahora · ') + (s.resent[i]) : sentStatus[i][0], fg: (s.resent || {})[i] ? '#1b2a4e' : sentStatus[i][1], resend: () => this.setState({ rsOpen: { kind: 'one', i, name: ct[0] }, rsToast: '' }), open: () => this.nav('validate', { valCode: this.codes[i], valState: 'valid', valIdx: i, fromApp: true }) }));
+    const nC = this.contacts.length;
+    const sentIdx = [0, 1, 2, 3, 4, 5].concat(s.added.map((_, k) => nC + k));
+    const sentRows = sentIdx.map(i => {
+      const ct = this.personAt(i); const code = this.codeAt(i); const rs = (s.resent || {})[i]; const edited = !!s.pEdits[i]; const isNew = i >= nC;
+      const status = rs ? this.L('Reenviado agora · ', 'Resent just now · ', 'Reenviado ahora · ') + rs
+        : isNew ? this.L('Emitido agora · 1 crédito', 'Issued just now · 1 credit', 'Emitido ahora · 1 crédito')
+        : edited ? this.L('Dados corrigidos · reemitido sem custo', 'Details corrected · reissued at no cost', 'Datos corregidos · reemitido sin costo')
+        : sentStatus[i][0];
+      return { name: ct[0], code, status, fg: rs || isNew || edited ? '#1b2a4e' : sentStatus[i][1],
+        resend: () => this.setState({ rsOpen: { kind: 'one', i, name: ct[0] }, rsToast: '', pe: null }),
+        edit: () => this.setState({ pe: { kind: 'edit', i }, peForm: { name: ct[0], email: ct[1], phone: ct[2] }, peErr: '', peSend: true, rsOpen: null, rsToast: '' }),
+        page: () => this.nav('participant', { viewIdx: i, certSide: 'front', ppToast: '', playing: false }),
+        open: () => this.nav('validate', { valCode: code, valState: 'valid', valIdx: i, fromApp: true }) };
+    });
     const events = [
       { name: s.ev.name, date: s.ev.date, count: '142 participantes', status: 'Rascunho', bg: '#f0f2f6', fg: '#3a4356', open: () => this.nav('wizard', { step: 1, sent: false, paid: false }) },
       { name: 'Oficina de Escrita Científica', date: '12/09/2026', count: '64 participantes', status: 'Aguardando pagamento', bg: '#fbf3e1', fg: '#7a5c14', open: () => this.nav('wizard', { step: 6, maxStep: 6, imported: true, paid: false, sent: false }) },
       { name: 'Congresso Regional de Enfermagem', date: '28/08/2026', count: '312 certificados', status: 'Emitido', bg: '#eef6f1', fg: '#1f5e3d', open: () => this.nav('wizard', { step: 7, maxStep: 7, imported: true, paid: true, sent: true }) },
       { name: 'Workshop de Dados Abertos', date: '15/07/2026', count: '48 certificados', status: 'Emitido', bg: '#eef6f1', fg: '#1f5e3d', open: () => this.nav('wizard', { step: 7, maxStep: 7, imported: true, paid: true, sent: true }) }
     ];
-    const vc = this.contacts[s.valIdx] || this.contacts[0];
-    const valRows = [['Participante', vc[0]], ['Evento', s.ev.name], ['Data', s.ev.date], ['Local', s.ev.place], ['Carga horária', s.ev.hours + this.L(' horas', ' hours', ' horas')], ['Emitido por', s.ev.org], ['Assinado por', s.ev.signer + ', ' + s.ev.role], ['Emitido em', this.L('03/10/2026 às 14:32', '10/03/2026 at 2:32 PM', '03/10/2026 a las 14:32')], ['Código', this.codes[s.valIdx] || this.codes[0]]].map(([k, v]) => ({ k, v }));
-    const scr = [['landing', 'Landing'], ['benefits', 'Benefícios'], ['blog', 'Blog'], ['login', 'Login'], ['dash', 'Painel'], ['wizard', 'Evento'], ['validate', 'Validação']];
+    const certRows = i => { const pc = this.personAt(i); return [['Participante', pc[0]], ['Evento', s.ev.name], ['Data', s.ev.date], ['Local', s.ev.place], ['Carga horária', s.ev.hours + this.L(' horas', ' hours', ' horas')], ['Emitido por', s.ev.org], ['Assinado por', s.ev.signer + ', ' + s.ev.role], ['Emitido em', this.L('03/10/2026 às 14:32', '10/03/2026 at 2:32 PM', '03/10/2026 a las 14:32')], ['Código', this.codeAt(i)]].map(([k, v]) => ({ k, v })); };
+    const valRows = certRows(s.valIdx);
+    const scr = [['landing', 'Landing'], ['benefits', 'Benefícios'], ['blog', 'Blog'], ['legal', 'Termos'], ['login', 'Login'], ['forgot', 'Senha'], ['dash', 'Painel'], ['wizard', 'Evento'], ['settings', 'Conta'], ['validate', 'Validação'], ['participant', 'Participante']];
+    const scrExtra = { validate: { fromApp: false }, participant: { viewIdx: 0, certSide: 'front', ppToast: '', playing: false }, forgot: { forgotStep: 'request', fBad: false, fResent: false, pw1: '', pw2: '' }, settings: { setTab: 'conta', setMsg: '' }, legal: { legalDoc: 'terms' } };
+    const toast = text => this.setState({ ppToast: text });
+    const setMsg = text => this.setState({ setMsg: text });
+    const curCode = this.codeAt(curIdx);
     const isLoginTab = s.authTab === 'login';
     const tabOn = '#fff', sh = '0 1px 3px rgba(17,28,54,.12)';
     return {
       frameMax: mob ? '390px' : '100%', frameMargin: mob ? '24px auto 96px' : '0', frameMinH: mob ? '844px' : '100vh',
       frameBorder: mob ? '1px solid #cdd3de' : '0', frameRadius: mob ? '28px' : '0',
-      isLanding: s.screen === 'landing', isBenefits: s.screen === 'benefits', isMarketing: ['landing', 'benefits', 'blog', 'post'].includes(s.screen), isBlog: s.screen === 'blog', isPost: s.screen === 'post',
+      isLanding: s.screen === 'landing', isBenefits: s.screen === 'benefits', isMarketing: ['landing', 'benefits', 'blog', 'post', 'legal'].includes(s.screen), isBlog: s.screen === 'blog', isPost: s.screen === 'post',
+      isLegal: s.screen === 'legal', isForgot: s.screen === 'forgot', isSettings: s.screen === 'settings', isParticipant: isPart,
       ...this.blogVals(s), isLogin: s.screen === 'login', isApp, isDash: s.screen === 'dash', isWizard: s.screen === 'wizard', isValidate: s.screen === 'validate',
       showPubHeader: !isApp, go,
       qrA: this.qrFor(7), qrP: this.qrFor(11 + s.pIdx), qrPix: this.qrFor(42),
@@ -1308,7 +1816,7 @@ class Component extends DCLogic {
       ...(() => {
         const fam = { serif: "'Source Serif 4',serif", sans: "'IBM Plex Sans',sans-serif", script: "'Pinyon Script',cursive" };
         const fa = { left: 'flex-start', center: 'center', right: 'flex-end' };
-        const fields = this.getFields(); const code = this.codes[s.pIdx % this.codes.length]; const qrc = this.qrFor(11 + s.pIdx);
+        const fields = this.getFields(); const code = curCode; const qrc = this.qrFor(11 + curIdx);
         const mk = edit => fields.map(f => { const on = edit && s.selId === f.id; return {
           left: f.x + '%', top: f.y + '%', width: f.w + '%', fs: f.size + 'cqw', family: fam[f.family], weight: f.bold ? 600 : 400, italic: f.italic ? 'italic' : 'normal', color: f.color, align: f.align,
           ls: f.upper ? '0.18em' : 'normal', tt: f.upper ? 'uppercase' : 'none',
@@ -1353,7 +1861,7 @@ class Component extends DCLogic {
       nextStep: () => { if (s.step === 2 && !s.imported) this.setState({ imported: true }); goStep(s.step + 1); },
       nextLabel: s.step === 5 ? 'Ir para pagamento' : 'Continuar',
       valCode: s.valCode, onValCode: e => this.setState({ valCode: e.target.value.toUpperCase() }),
-      doValidate: () => { const code = s.valCode.trim().toUpperCase(); const i = this.codes.indexOf(code); this.setState(i >= 0 ? { valState: 'valid', valIdx: i } : { valState: 'none', valCodeShown: code || '(vazio)' }); },
+      doValidate: () => { const code = s.valCode.trim().toUpperCase(); const i = this.allCodes().indexOf(code); this.setState(i >= 0 ? { valState: 'valid', valIdx: i } : { valState: 'none', valCodeShown: code || '(vazio)' }); },
       scanOpen: !!s.scanOpen, helpOpen: !!s.helpOpen,
       toggleScan: () => this.setState({ scanOpen: !s.scanOpen }),
       toggleHelp: () => this.setState({ helpOpen: !s.helpOpen }),
@@ -1361,7 +1869,129 @@ class Component extends DCLogic {
       simulateScan: () => this.setState({ scanOpen: false, valCode: this.codes[1], valState: 'valid', valIdx: 1 }),
       langs: ['pt', 'en', 'es'].map(l => { const on = (s.lang || 'pt') === l; return { label: l.toUpperCase(), set: () => this.setLang(l), bg: on ? '#fff' : 'transparent', fg: '#1b2a4e', bgD: on ? '#fff' : 'transparent', fgD: on ? '#111c36' : '#c9d1e3' }; }),
       valFound: s.valState === 'valid', valNotFound: s.valState === 'none', valCodeShown: s.valCodeShown, valRows,
-      navScreens: scr.map(([k, label]) => ({ label, go: () => this.nav(k, k === 'validate' ? { fromApp: false } : {}), bg: s.screen === k ? '#fff' : 'transparent', fg: s.screen === k ? '#111c36' : '#c9d1e3' })),
+      appNav: { ev: s.screen === 'settings' ? '#5b6475' : '#1b2a4e', cr: s.screen === 'settings' && s.setTab === 'creditos' ? '#1b2a4e' : '#5b6475', acc: s.screen === 'settings' && s.setTab !== 'creditos' ? '#1b2a4e' : '#5b6475' },
+      creditLine: this.L(`Saldo: ${s.credits} créditos`, `Balance: ${s.credits} credits`, `Saldo: ${s.credits} créditos`),
+      valOpen: () => this.nav('participant', { viewIdx: s.valIdx, certSide: 'front', ppToast: '', playing: false }),
+      valPdf: () => this.nav('participant', { viewIdx: s.valIdx, certSide: 'front', playing: false, ppToast: this.L('Download simulado: ', 'Simulated download: ', 'Descarga simulada: ') + 'certificado-' + this.codeAt(s.valIdx) + '.pdf' }),
+      valLinkedin: () => this.nav('participant', { viewIdx: s.valIdx, certSide: 'front', playing: false, ppToast: this.L('O LinkedIn abriria com o certificado preenchido (simulado).', 'LinkedIn would open with the certificate pre-filled (simulated).', 'LinkedIn se abriría con el certificado completado (simulado).') }),
+      dlTemplate: () => this.download(this.L('planilha-modelo-certfy.csv', 'certfy-template.csv', 'plantilla-certfy.csv'), [this.L(['nome', 'email', 'whatsapp'], ['name', 'email', 'whatsapp'], ['nombre', 'correo', 'whatsapp']), ['Maria Silva', 'maria.silva@exemplo.com', '(81) 99999-0000'], ['João Souza', 'joao.souza@exemplo.com', '']]),
+      exportLinks: () => this.download('links-' + s.ev.name.toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '-') + '.csv', [this.L(['nome', 'email', 'codigo', 'link'], ['name', 'email', 'code', 'link'], ['nombre', 'correo', 'codigo', 'enlace'])].concat(sentIdx.map(i => { const p = this.personAt(i), cd = this.codeAt(i); return [p[0], p[1], cd, 'https://certfy.me/c/' + cd]; }))),
+      sentTitle: this.L(`${142 + s.added.length} certificados emitidos`, `${142 + s.added.length} certificates issued`, `${142 + s.added.length} certificados emitidos`),
+      sentMore: this.L(`e mais ${136} participantes`, `and ${136} more attendees`, `y ${136} participantes más`),
+      ppOpts: [
+        ['survey', 'Pesquisa de satisfação', '3 perguntas de 1 a 5 e um comentário, mostradas junto com o certificado. Responder é opcional.'],
+        ['back', 'Verso com conteúdo programático', 'Programação e carga horária no verso do certificado. Usa o mesmo crédito.'],
+        ['video', 'Mensagem em vídeo do organizador', 'Um vídeo curto de agradecimento, exibido na página do participante.']
+      ].map(([k, name, desc]) => { const on = s.ppOpt[k]; return { name, desc, toggle: () => this.setState({ ppOpt: { ...s.ppOpt, [k]: !on } }), border: on ? '#1b2a4e' : '#e3e6ec', bg: on ? '#f5f7fb' : '#fff', box: on ? '#1b2a4e' : '#fff', boxBorder: on ? '#1b2a4e' : '#b9c1d1', mark: on ? '✓' : '' }; }),
+      ppVideoOn: s.ppOpt.video, videoBtn: s.videoName ? this.L('Trocar vídeo', 'Replace video', 'Cambiar video') : this.L('Enviar vídeo', 'Upload video', 'Subir video'),
+      videoNote: s.videoName ? s.videoName : this.L('MP4 ou MOV, até 2 minutos. Sem vídeo, usamos um exemplo.', 'MP4 or MOV, up to 2 minutes. Without a video we show a sample.', 'MP4 o MOV, hasta 2 minutos. Sin video, mostramos un ejemplo.'),
+      onVideo: e => { const f = e.target.files && e.target.files[0]; if (f) this.setState({ videoName: f.name }); },
+      pe: (() => {
+        const o = s.pe; const f = s.peForm; const isAdd = o && o.kind === 'add';
+        const set = k => e => this.setState({ peForm: { ...s.peForm, [k]: e.target.value }, peErr: '' });
+        return {
+          open: !!o, name: f.name, email: f.email, phone: f.phone, onName: set('name'), onEmail: set('email'), onPhone: set('phone'),
+          title: !o ? '' : isAdd ? this.L('Adicionar participante', 'Add attendee', 'Agregar participante') : this.L('Editar participante', 'Edit attendee', 'Editar participante'),
+          note: !o ? '' : isAdd ? this.L(`Emite um novo certificado e consome 1 crédito. Saldo atual: ${s.credits} créditos.`, `Issues a new certificate and uses 1 credit. Current balance: ${s.credits} credits.`, `Emite un nuevo certificado y consume 1 crédito. Saldo actual: ${s.credits} créditos.`)
+            : this.L(`A correção reemite o certificado sem custo. O código ${this.codeAt(o.i)} continua o mesmo.`, `Corrections reissue the certificate at no cost. Code ${this.codeAt(o.i)} stays the same.`, `La corrección reemite el certificado sin costo. El código ${this.codeAt(o.i)} sigue siendo el mismo.`),
+          cta: isAdd ? this.L('Adicionar e emitir', 'Add and issue', 'Agregar y emitir') : this.L('Salvar e reemitir', 'Save and reissue', 'Guardar y reemitir'),
+          box: s.peSend ? '#1b2a4e' : '#fff', boxBorder: s.peSend ? '#1b2a4e' : '#b9c1d1', mark: s.peSend ? '✓' : '', toggleSend: () => this.setState({ peSend: !s.peSend }),
+          hasError: !!s.peErr, error: s.peErr,
+          openAdd: () => this.setState({ pe: { kind: 'add' }, peForm: { name: '', email: '', phone: '' }, peErr: '', peSend: true, rsOpen: null, rsToast: '' }),
+          cancel: () => this.setState({ pe: null, peErr: '' }),
+          save: () => {
+            const nm = f.name.trim(), em = f.email.trim();
+            if (nm.length < 3) return this.setState({ peErr: this.L('Informe o nome completo.', 'Enter the full name.', 'Ingresa el nombre completo.') });
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) return this.setState({ peErr: this.L('Informe um e-mail válido.', 'Enter a valid email.', 'Ingresa un correo válido.') });
+            if (isAdd && s.added.length >= this.addCodes.length) return this.setState({ peErr: this.L('Limite de inclusões deste protótipo atingido.', 'Prototype limit for new attendees reached.', 'Se alcanzó el límite de inclusiones de este prototipo.') });
+            if (isAdd && s.credits < 1) return this.setState({ peErr: this.L('Sem créditos. Compre créditos em Conta › Créditos.', 'No credits left. Buy credits under Account › Credits.', 'Sin créditos. Compra créditos en Cuenta › Créditos.') });
+            const row = [nm, em, f.phone.trim()];
+            const sentNote = s.peSend ? this.L(' e enviado.', ' and sent.', ' y enviado.') : '.';
+            if (isAdd) this.setState({ added: [...s.added, row], credits: s.credits - 1, pe: null, rsToast: this.L('Certificado emitido para ', 'Certificate issued to ', 'Certificado emitido para ') + nm + sentNote });
+            else this.setState({ pEdits: { ...s.pEdits, [o.i]: row }, pe: null, rsToast: this.L('Certificado de ', 'Certificate for ', 'Certificado de ') + nm + this.L(' reemitido', ' reissued', ' reemitido') + sentNote });
+          }
+        };
+      })(),
+      fp: (() => {
+        const st = s.forgotStep; const order = ['request', 'sent', 'reset', 'done']; const at = order.indexOf(st);
+        const p1 = s.pw1, p2 = s.pw2;
+        const reqs = [[p1.length >= 8, this.L('Pelo menos 8 caracteres', 'At least 8 characters', 'Al menos 8 caracteres')], [/[a-zA-Z]/.test(p1) && /\d/.test(p1), this.L('Letras e números', 'Letters and numbers', 'Letras y números')], [p1.length > 0 && p1 === p2, this.L('As duas senhas são iguais', 'Both passwords match', 'Las dos contraseñas coinciden')]];
+        const ok = reqs.every(r => r[0]);
+        return {
+          isReq: st === 'request', isSent: st === 'sent', isReset: st === 'reset', isDone: st === 'done',
+          dots: order.slice(0, 3).map((_, i) => i <= at ? '#1b2a4e' : '#e3e6ec'),
+          email: s.fEmail, onEmail: e => this.setState({ fEmail: e.target.value, fBad: false }), emailBad: s.fBad,
+          send: () => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s.fEmail.trim()) ? this.setState({ forgotStep: 'sent', fResent: false }) : this.setState({ fBad: true }),
+          sentText: this.L(`Se houver uma conta com ${s.fEmail}, você vai receber um link em alguns minutos. O link vale por 1 hora.`, `If there is an account for ${s.fEmail}, you will get a link in a few minutes. The link is valid for 1 hour.`, `Si existe una cuenta con ${s.fEmail}, recibirás un enlace en unos minutos. El enlace es válido por 1 hora.`),
+          resent: s.fResent, resend: () => this.setState({ fResent: true }), openLink: () => this.setState({ forgotStep: 'reset', pw1: '', pw2: '' }),
+          pw1: p1, pw2: p2, onPw1: e => this.setState({ pw1: e.target.value }), onPw2: e => this.setState({ pw2: e.target.value }),
+          reqs: reqs.map(([v, label]) => ({ label, mark: v ? '✓' : '·', fg: v ? '#1f5e3d' : '#6b7385' })),
+          saveBg: ok ? '#1b2a4e' : '#b9c1d1', cursor: ok ? 'pointer' : 'not-allowed', save: () => ok && this.setState({ forgotStep: 'done' })
+        };
+      })(),
+      legal: (() => {
+        const key = s.legalDoc === 'privacy' ? 'privacy' : 'terms'; const d = this.legalDocs[key];
+        return { title: d.title, updated: this.L('Versão de 09/10/2026', 'Version of 10/09/2026', 'Versión del 09/10/2026'),
+          sections: d.sections.map(([h, p], i) => ({ h: (i + 1) + '. ' + this.tr(h), p, id: 'legal-' + key + '-' + i, jump: () => this.scrollToId('legal-' + key + '-' + i) })) };
+      })(),
+      legalTabs: [['terms', 'Termos de uso'], ['privacy', 'Política de privacidade']].map(([k, label]) => { const on = (s.legalDoc === 'privacy' ? 'privacy' : 'terms') === k; return { label, set: () => this.setState({ legalDoc: k }), bd: on ? '#1b2a4e' : '#cdd3de', bg: on ? '#1b2a4e' : '#fff', fg: on ? '#fff' : '#1b2a4e' }; }),
+      setTabs: [['conta', 'Perfil e organização'], ['creditos', 'Créditos e compras'], ['seguranca', 'Segurança'], ['api', 'API']].map(([k, label]) => { const on = s.setTab === k; return { label, set: () => this.setState({ setTab: k, setMsg: '' }), bd: on ? '#1b2a4e' : 'transparent', fg: on ? '#111c36' : '#5b6475' }; }),
+      isSetConta: s.setTab === 'conta', isSetCred: s.setTab === 'creditos', isSetSeg: s.setTab === 'seguranca', isSetApi: s.setTab === 'api',
+      setToast: { show: !!s.setMsg, text: s.setMsg, close: () => setMsg('') },
+      msgLangs: [['pt', 'Português'], ['en', 'English'], ['es', 'Español']].map(([k, label]) => { const on = s.msgLang === k; return { label, set: () => this.setState({ msgLang: k }), bd: on ? '#1b2a4e' : '#cdd3de', bg: on ? '#1b2a4e' : '#fff', fg: on ? '#fff' : '#1b2a4e' }; }),
+      logoBg: s.logoUrl ? `#fff center/contain no-repeat url("${s.logoUrl}")` : '#fafbfc', noLogo: !s.logoUrl,
+      logoBtn: s.logoUrl ? this.L('Trocar logo', 'Replace logo', 'Cambiar logo') : this.L('Enviar logo', 'Upload logo', 'Subir logo'),
+      onLogo: e => { const f = e.target.files && e.target.files[0]; if (f) this.setState({ logoUrl: URL.createObjectURL(f) }); },
+      saveAccount: () => setMsg(this.L('Alterações salvas.', 'Changes saved.', 'Cambios guardados.')),
+      savePassword: () => setMsg(this.L('Senha atualizada. As outras sessões foram encerradas.', 'Password updated. Other sessions were signed out.', 'Contraseña actualizada. Las otras sesiones se cerraron.')),
+      endSessions: () => setMsg(this.L('As outras sessões foram encerradas.', 'Other sessions were signed out.', 'Las otras sesiones se cerraron.')),
+      sessions: [[this.L('Chrome no Windows · esta sessão', 'Chrome on Windows · this session', 'Chrome en Windows · esta sesión'), 'Recife, BR', this.L('Ativa agora', 'Active now', 'Activa ahora'), '#1f5e3d'], ['Safari no iPhone', 'Recife, BR', this.L('Há 2 dias', '2 days ago', 'Hace 2 días'), '#5b6475']].map(([device, place, when, fg]) => ({ device, place, when, fg })),
+      delClosed: !s.delOpen, delIsOpen: !!s.delOpen, delOpen: () => this.setState({ delOpen: true }), delCancel: () => this.setState({ delOpen: false }),
+      delConfirm: () => this.setState({ delOpen: false, setMsg: this.L('Pedido de exclusão registrado (simulação). Você receberia uma confirmação por e-mail.', 'Deletion request recorded (simulation). You would get an email confirmation.', 'Solicitud de eliminación registrada (simulación). Recibirías una confirmación por correo.') }),
+      apiEndpoints: [['POST', '/v1/events', this.L('Cria um evento', 'Create an event', 'Crea un evento')], ['POST', '/v1/events/{id}/participants', this.L('Envia a lista de participantes', 'Upload the attendee list', 'Envía la lista de participantes')], ['POST', '/v1/events/{id}/issue', this.L('Emite e envia os certificados', 'Issue and send certificates', 'Emite y envía los certificados')], ['GET', '/v1/certificates/{code}', this.L('Consulta um certificado', 'Look up a certificate', 'Consulta un certificado')]].map(([method, path, desc]) => ({ method, path, desc, fg: method === 'GET' ? '#1f5e3d' : '#1b2a4e' })),
+      apiNotify: () => setMsg(this.L('Combinado. Avisaremos por e-mail quando a API estiver disponível.', 'Done. We will email you when the API is available.', 'Listo. Te avisaremos por correo cuando la API esté disponible.')),
+      qC: this.qObj('qtyC', [50, 100, 250, 500]),
+      buyLabel: (() => { const q = s.qtyC, t = this.tierOf(q); return this.L(`Comprar ${q} créditos por ${this.fmt(q * t.p)}`, `Buy ${q} credits for ${this.fmt(q * t.p)}`, `Comprar ${q} créditos por ${this.fmt(q * t.p)}`); })(),
+      buyCredits: () => { const m = s.pay === 'card' || s.pay === 'boleto' || s.pay === 'wallet' || s.pay === 'paypal' ? s.pay : ((s.lang || 'pt') === 'pt' ? 'pix' : 'card'); this.setState({ credits: s.credits + s.qtyC, purchases: [{ date: '09/10/2026', desc: 'Créditos avulsos', qty: s.qtyC, method: m }, ...s.purchases], setMsg: this.L(`${s.qtyC} créditos adicionados ao saldo.`, `${s.qtyC} credits added to your balance.`, `${s.qtyC} créditos añadidos al saldo.`) }); },
+      creditStats: [
+        { label: this.L('Saldo disponível', 'Available balance', 'Saldo disponible'), value: String(s.credits), note: this.L('créditos', 'credits', 'créditos') },
+        { label: this.L('Próximo vencimento', 'Next expiry', 'Próximo vencimiento'), value: this.L('02/07/2027', '07/02/2027', '02/07/2027'), note: this.L('20 créditos', '20 credits', '20 créditos') },
+        { label: this.L('Usados nos últimos 12 meses', 'Used in the last 12 months', 'Usados en los últimos 12 meses'), value: '1.284', note: this.L('em 6 eventos', 'across 6 events', 'en 6 eventos') }
+      ],
+      purchaseRows: s.purchases.map(p => { const mName = { pix: 'Pix', card: this.L('Cartão', 'Card', 'Tarjeta'), boleto: 'Boleto', wallet: 'Apple Pay / Google Pay', paypal: 'PayPal' }[p.method]; return {
+        date: p.date, desc: this.tr(p.desc), qty: this.L(`${p.qty} créditos`, `${p.qty} credits`, `${p.qty} créditos`), total: this.fmt(p.qty * this.tierOf(p.qty).p), status: this.L('Pago · ', 'Paid · ', 'Pagado · ') + mName,
+        receipt: () => setMsg(this.L('Recibo em PDF gerado (simulação).', 'PDF receipt generated (simulation).', 'Recibo en PDF generado (simulación).')) }; }),
+      exportPurchases: () => this.download(this.L('compras-certfy.csv', 'certfy-purchases.csv', 'compras-certfy.csv'), [this.L(['data', 'descricao', 'creditos', 'valor', 'forma'], ['date', 'description', 'credits', 'amount', 'method'], ['fecha', 'descripcion', 'creditos', 'importe', 'forma'])].concat(s.purchases.map(p => [p.date, this.tr(p.desc), p.qty, (p.qty * this.tierOf(p.qty).p).toFixed(2), p.method]))),
+      pp: (() => {
+        const pc = this.personAt(s.viewIdx); const code = this.codeAt(s.viewIdx); const first = pc[0].split(' ')[0];
+        const link = 'https://certfy.me/c/' + code;
+        const showSurvey = s.ppOpt.survey && !s.surveyDone; const qs = [['geral', 'Avaliação geral do evento'], ['conteudo', 'Conteúdo e palestrantes'], ['org', 'Organização']];
+        const answered = qs.every(([k]) => s.surveyR[k]);
+        const side = s.ppOpt.back ? s.certSide : 'front';
+        return {
+          org: s.ev.org, code,
+          hello: this.L(`Olá, ${first}. Seu certificado está pronto.`, `Hi ${first}, your certificate is ready.`, `Hola, ${first}. Tu certificado está listo.`),
+          sub: s.ev.name + ' · ' + s.ev.date + ' · ' + s.ev.place,
+          toast: !!s.ppToast, toastText: s.ppToast, closeToast: () => toast(''),
+          showSurvey, questions: qs.map(([k, label]) => ({ label, opts: [1, 2, 3, 4, 5].map(n => { const on = s.surveyR[k] === n; return { label: String(n), set: () => this.setState({ surveyR: { ...s.surveyR, [k]: n } }), bd: on ? '#1b2a4e' : '#cdd3de', bg: on ? '#1b2a4e' : '#fff', fg: on ? '#fff' : '#1b2a4e' }; }) })),
+          surveyBg: answered ? '#1b2a4e' : '#b9c1d1', surveyCursor: answered ? 'pointer' : 'not-allowed',
+          sendSurvey: () => answered && this.setState({ surveyDone: true, ppToast: this.L('Obrigado! Suas respostas foram enviadas à organização.', 'Thank you! Your answers were sent to the organizer.', '¡Gracias! Tus respuestas fueron enviadas a la organización.') }),
+          skipSurvey: () => this.setState({ surveyDone: true }),
+          hasBack: s.ppOpt.back, front: side === 'front', back: side === 'back',
+          sides: [['front', 'Frente'], ['back', 'Verso']].map(([k, label]) => { const on = side === k; return { label, set: () => this.setState({ certSide: k }), bg: on ? '#fff' : 'transparent', sh: on ? '0 1px 2px rgba(17,28,54,.15)' : 'none' }; }),
+          program: [['09:00', 'Abertura e palestra magna'], ['10:30', 'Trilha de inteligência artificial aplicada'], ['14:00', 'Oficina de prototipagem rápida'], ['16:00', 'Painel: inovação no setor público'], ['17:30', 'Encerramento e premiação']].map(([t, d]) => ({ t, d })),
+          backHours: this.L(`Carga horária total: ${s.ev.hours} horas`, `Total hours: ${s.ev.hours}`, `Carga horaria total: ${s.ev.hours} horas`),
+          pdf: () => toast(this.L('Download simulado: ', 'Simulated download: ', 'Descarga simulada: ') + 'certificado-' + code + '.pdf'),
+          linkedin: () => toast(this.L('O LinkedIn abriria com o certificado preenchido (simulado).', 'LinkedIn would open with the certificate pre-filled (simulated).', 'LinkedIn se abriría con el certificado completado (simulado).')),
+          whatsapp: () => toast(this.L('O WhatsApp abriria com o link do certificado (simulado).', 'WhatsApp would open with the certificate link (simulated).', 'WhatsApp se abriría con el enlace del certificado (simulado).')),
+          copy: () => { this.copy(link); toast(this.L('Link copiado: ', 'Link copied: ', 'Enlace copiado: ') + link); },
+          validate: () => this.nav('validate', { valCode: code, valState: 'valid', valIdx: s.viewIdx, fromApp: false }),
+          hasVideo: s.ppOpt.video, playing: !!s.playing, notPlaying: !s.playing, play: () => this.setState({ playing: !s.playing }),
+          videoTitle: this.L(`Um recado de ${s.ev.signer}`, `A message from ${s.ev.signer}`, `Un mensaje de ${s.ev.signer}`),
+          rows: certRows(s.viewIdx)
+        };
+      })(),
+      navScreens: scr.map(([k, label]) => ({ label, go: () => this.nav(k, scrExtra[k] || {}), bg: s.screen === k ? '#fff' : 'transparent', fg: s.screen === k ? '#111c36' : '#c9d1e3' })),
       navDevices: [['desktop', 'Desktop'], ['mobile', 'Mobile']].map(([k, label]) => ({ label, go: () => this.setState({ device: k }), bg: s.device === k ? '#3b4f80' : 'transparent', fg: '#fff' }))
     };
   }
